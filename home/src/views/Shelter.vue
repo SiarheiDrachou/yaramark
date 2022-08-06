@@ -1,0 +1,98 @@
+<template>
+    <section class="object-description">
+        <a class="object-description__link-back" href="/objects">
+            <ArrowBack />
+
+            Назад к проектам
+        </a>
+        <ul class="object-description-list">
+            <li class="object-description-list__item location">
+                <Location />
+
+                <p v-text="shelter.location"></p>
+            </li>
+            <li class="object-description-list__item year">
+                <span>Год постройки</span>
+                <span v-text="shelter.year"></span>
+            </li>
+            <li class="object-description-list__item sqrt">
+                <span>Площадь объекта</span>
+                <span v-html="shelter.sqrt"></span>
+            </li>
+        </ul>
+
+        <div class="object-description-container">
+            <ObjectCarousel :images="shelter.images" />
+
+            <AboutTeams :lists="shelter.lists" :heading="shelter.heading" :headingStyle="shelter.headingStyle || ''" :arrayStyle="shelter.arrayStyle || ''"/>
+        </div>
+    </section>
+</template>
+
+<script>
+    export default {
+        components: {
+            Location: () => import(/* webpackChunkName: "Shelter" */ "../assets/svg/Location.vue"),
+            ObjectCarousel: () => import(/* webpackChunkName: "Shelter" */ "../components/ObjectCarousel/ObjectCarousel.vue"),
+            AboutTeams: () => import(/* webpackChunkName: "Shelter" */ "../components/AboutDescription/AboutTeams.vue"),
+            ArrowBack: () => import(/* webpackChunkName: "Shelter" */ "../assets/svg/ArrowBack.vue"),
+        },
+        data() {
+            return {
+                shelter: {
+                    location: 'Социально-педагогический центр Центрального района г. Минска',
+                    year: '05.04.2020 г.',
+                    sqrt: '40 м<sup>2</sup>',
+                    images: [
+                        {
+                            id: 'shelter-1',
+                            src: 'https://yaramark.by/img/shelter-1.jpg',
+                            alt: `Благоустройство территории детского социального приюта по адресу: г. Минск, ул. М. Танка, 34а. Благотворительность`,
+                        },
+                        {
+                            id: 'shelter-2',
+                            src: 'https://yaramark.by/img/shelter-2.jpg',
+                            alt: `Благоустройство территории детского социального приюта по адресу: г. Минск, ул. М. Танка, 34а. Благотворительность`,
+                        },
+                        {
+                            id: 'shelter-3',
+                            src: 'https://yaramark.by/img/shelter-3.jpg',
+                            alt: `Благоустройство территории детского социального приюта по адресу: г. Минск, ул. М. Танка, 34а. Благотворительность`,
+                        },
+                        {
+                            id: 'shelter-4',
+                            src: 'https://yaramark.by/img/shelter-4.jpg',
+                            alt: `Благоустройство территории детского социального приюта по адресу: г. Минск, ул. М. Танка, 34а. Благотворительность`,
+                        },
+                        {
+                            id: 'shelter-5',
+                            src: 'https://yaramark.by/img/shelter-5.jpg',
+                            alt: `Благоустройство территории детского социального приюта по адресу: г. Минск, ул. М. Танка, 34а. Благотворительность`,
+                        },
+                        {
+                            id: 'shelter-6',
+                            src: 'https://yaramark.by/img/shelter-6.jpg',
+                            alt: `Благоустройство территории детского социального приюта по адресу: г. Минск, ул. М. Танка, 34а. Благотворительность`,
+                        },
+                        {
+                            id: 'shelter-7',
+                            src: 'https://yaramark.by/img/shelter-7.jpg',
+                            alt: `Благоустройство территории детского социального приюта по адресу: г. Минск, ул. М. Танка, 34а. Благотворительность`,
+                        },
+                    ],
+                    heading: 'Полный комплекс работ по благоустройству:',
+                    lists: [
+                        'Ремонт основания из плитки',
+                        'Ремонт отмостки',
+                    ],
+                    headingStyle: {
+                        marginBottom: '33px',
+                    },
+                    arrayStyle: {
+                        marginBottom: '130px',
+                    }
+                }
+            }
+        }
+    }
+</script>
