@@ -1,0 +1,164 @@
+<template>
+    <article class="about-us">
+        <h3 class="about-us__heading">
+            Форма собственности – частная, действуем на основании Устава
+        </h3>
+
+        <div v-for="list in lists" :key="list.heading">
+            <AboutTeams :lists="list.array" :heading="list.heading" :headingStyle="list.headingStyle || ''" :arrayStyle="list.arrayStyle || ''" />
+        </div>
+    </article>
+</template>
+
+<script>
+    export default {
+        components: {
+            AboutTeams: () => import(/* webpackChunkName: "Home" */ "./AboutTeams.vue"),
+        },
+        data() {
+            return {
+                lists: [
+                    {
+                        heading: `Наша компания имеет разрешительною документацию для производства выше указанных работ.`,
+                        array: [],
+                        headingStyle: {
+                            marginBottom: '20px',
+                        },
+                    },
+                    {
+                        heading: `Коллектив ООО «ЯраМарк» состоит из профессионалов своего дела, для осуществления работ данной отрасли имеются:`,
+                        array: [],
+                        headingStyle: {
+                            marginBottom: '33px',
+                        },
+                    },
+                    {
+                        heading: `Оказываемые услуги:`,
+                        array: [
+                            `
+                                все виды земляных работ (выторфовка, снятие разноуровневого грунта, 
+                                вертикальная планировка территории, устройство котлованов любой сложности с последующей 
+                                обратной засыпкой);
+                            `,
+                            `
+                                благоустройство территории (установка борта, посадки газона, посадка зеленных насаждений, 
+                                устройство плиточного, бетонного и асфальтобетонного покрытия любой сложности);
+                            `,
+                            `
+                                наружные сети (канализации, водопровода, ливневой канализации, очистные сооружения);
+                            `,
+                            `
+                                строительство автомобильных дорог (весь комплекс работ).
+                            `,
+                            `
+                                общестроительные работы; 
+                            `,
+                        ],
+                        headingStyle: {
+                            marginBottom: '33px',
+                        },
+                        arrayStyle: {
+                            listStyleType: 'number',
+                            marginBottom: '130px',
+                        }
+                    },
+                    {
+                        heading: `Управляющий`,
+                        array: [],
+                        headingStyle: {
+                            marginBottom: '10px',
+                        },
+                        arrayStyle: {
+                            listStyleType: 'disc',
+                            marginBottom: '33px',
+                        }
+                    },
+                    {
+                        heading: `Отдел бухгалтера:`,
+                        array: [
+                            `главный бухгалтер`,
+                            `специалист по кадрам`,
+                        ],
+                        headingStyle: {
+                            marginBottom: '10px',
+                        },
+                        arrayStyle: {
+                            listStyleType: 'disc',
+                            marginBottom: '33px',
+                        }
+                    },
+                    {
+                        heading: `Аттестованные специалисты:`,
+                        array: [
+                            `главный инженер`,
+                            `производитель работ`,
+                            `мастер строительного участка`,
+                            `инженер по сметной работе`,
+                            `инженер по охране труда`,
+                        ],
+                        headingStyle: {
+                            marginBottom: '10px',
+                        },
+                        arrayStyle: {
+                            listStyleType: 'disc',
+                            marginBottom: '33px',
+                        }
+                    },
+                    {
+                        heading: `Произодственно-технический отдел (ПТО):`,
+                        array: [
+                            `начальник отдела`,
+                            `инженер ПТО`,
+                        ],
+                        headingStyle: {
+                            marginBottom: '10px',
+                        },
+                        arrayStyle: {
+                            listStyleType: 'disc',
+                            marginBottom: '33px',
+                        }
+                    },
+                    {
+                        heading: `Служба геодезиста:`,
+                        array: [
+                            `ведущий геодезист`,
+                            `инженер геодезист`,
+                        ],
+                        headingStyle: {
+                            marginBottom: '10px',
+                        },
+                        arrayStyle: {
+                            listStyleType: 'disc',
+                            marginBottom: '33px',
+                        }
+                    },
+                    {
+                        heading: `В огранизации создан профсаюз`,
+                        array: [],
+                        headingStyle: {
+                            marginBottom: '33px',
+                        },
+                    },
+                    {
+                        heading: `Нашей организацией четко отлажена система покупки основных строительных материалов, имеем свой офис и производственную базу.`,
+                        array: [],
+                        headingStyle: {
+                            marginBottom: '33px',
+                        },
+                    }
+                ]
+            }
+        }
+    }
+</script>
+
+<style lang="scss">
+    .about-us {
+        max-width: 1280px;
+        margin: 60px auto 130px;
+
+        &__heading {
+            margin-bottom: 50px;
+        }
+    }
+</style>
