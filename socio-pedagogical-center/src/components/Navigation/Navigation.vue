@@ -121,6 +121,7 @@
                 width: 100%;
                 padding: 0;
                 visibility: visible;
+                z-index: 1000;
 
                 svg {
                     display: inline-block;
