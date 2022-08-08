@@ -15,10 +15,13 @@
         methods: {
             ...mapActions({
                 getIsOpenPreview: 'getIsOpenPreview',
+                getIsOpenRequest: 'getIsOpenRequest',
+                getIsMobile: 'getIsMobile',
             }),
             closeMobileMenu() {
                 this.getIsOpenPreview(false);
-                this.$emit('closeMobileMenu');
+                this.getIsOpenRequest(false);
+                this.getIsMobile(false);
             }
         },
     }
@@ -29,5 +32,6 @@
         position: absolute;
         top: 10px;
         right: 10px;
+        z-index: 1000;
     }
 </style>

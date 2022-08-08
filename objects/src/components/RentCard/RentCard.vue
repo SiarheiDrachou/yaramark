@@ -6,7 +6,7 @@
             <figcaption v-text="card.name"></figcaption>
         </figure>
 
-        <div class="card-container" style="display: none;">
+        <div class="card-container">
             <p v-if="card.type" v-text="card.type" class="card-type"></p>
 
             <p v-if="card.ladle" class="card-description">
@@ -37,15 +37,26 @@
                 <span>Глубина копания</span>
                 <span v-text="card.diggingDepth"></span>
             </p>
+            <p v-if="card.count" class="card-description">
+                <span>Количество</span>
+                <span v-text="card.count"></span>
+            </p>
         </div>
 
-        <button class="button--secondary">Заказать</button>
+        <button class="button--secondary" @click="getIsOpenRequest(true)">Заказать</button>
     </li>
 </template>
 
 <script>
+    import { mapActions } from 'vuex';
+
     export default {
         props: ['card'],
+        methods: {
+            ...mapActions({
+                getIsOpenRequest: 'getIsOpenRequest',
+            }),
+        }
     }
 </script>
 
@@ -64,14 +75,17 @@
 
             figcaption {
                 font-weight: 500;
-                font-size: 20px;
+                font-size: 17px;
                 line-height: 28px;
-                height: 56px;
+
+                @media(max-width: 968px) {
+                    height: 56px;
+                }
             }
         }
 
         .card-container {
-            height: 145px;
+            height: 181px;
         }
 
         .card-type {
@@ -86,6 +100,8 @@
             font-size: 18px;
             line-height: 25px;
             margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
         }
 
         button {

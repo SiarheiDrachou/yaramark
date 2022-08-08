@@ -19,7 +19,7 @@
             return {
                 lists: [
                     {
-                        heading: `Наша компания имеет разрешительною документацию для производства выше указанных работ.`,
+                        heading: `Наша компания имеет разрешительную документацию для производства выше указанных работ.`,
                         array: [],
                         headingStyle: {
                             marginBottom: '20px',
@@ -156,6 +156,7 @@
     .about-us {
         max-width: 1280px;
         margin: 60px auto 130px;
+        padding: 0 30px;
 
         &__heading {
             margin-bottom: 50px;

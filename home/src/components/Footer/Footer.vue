@@ -1,5 +1,5 @@
 <template>
-    <footer class="footer footer-bg">
+    <footer class="footer footer-bg" id="footer" name="footer">
         <section class="footer-top">
             <h2 class="footer-top__heading">Оставьте заявку</h2>
 

@@ -1,8 +1,8 @@
 <template>
     <section class="rent">
         <ul class="rent-category-list">
-            <li v-for="category in categoryArray" :key="category">
-                <button v-text="category" @click="filterCategory(category)"></button>
+            <li v-for="category in categoryArray" :key="category" class="rent-category-list__item">
+                <button class="rent-category-list__item__button" :class="{'rent-category-list__item__button--active': selectedType === category }" v-text="category" @click="filterCategory(category)"></button>
             </li>
         </ul>
 
@@ -13,9 +13,11 @@
 </template>
 
 <script>
+    import { mapActions, mapState } from 'vuex';
+
     export default {
         components: {
-            RentCard: () => import(/* webpackChunkName: "equipmentRental" */ "../components/RentCard/RentCard.vue"),
+            RentCard: () => import(/* webpackChunkName: "Rent" */ "../components/RentCard/RentCard.vue"),
         },
         data() {
             return {
@@ -328,14 +330,24 @@
         },
         methods: {
             filterCategory(type) {
+                this.getSelectedType(type);
+
                 this.currentCardArray = type === 'Вся техника'?
                     this.cardArray :
                     this.cardArray.filter((card) => card.type === type);
-            }
+            },
+            ...mapActions({
+                getSelectedType: 'getSelectedType',
+            }),
         },
         mounted() {
             this.currentCardArray = this.cardArray;
-        }
+        },
+        computed: {
+            ...mapState({
+                selectedType: state => state.selectedType,
+            })
+        },
     }
 </script>
 
@@ -359,11 +371,11 @@
                 justify-content: center;
             }
 
-            @media(max-width: 840px) {
-                grid-template-columns: repeat(2, 1fr);
+            @media(max-width: 968px) {
+                grid-template-columns: repeat(2, 320px);
             }
 
-            @media(max-width: 640px) {
+            @media(max-width: 768px) {
                 grid-template-columns: 384px;
             }
 
@@ -377,11 +389,20 @@
             grid-gap: 24px;
             flex-wrap: wrap;
 
-            li {
-                padding: 20px 42px;
-                background-color: #F0EFEF;
+            &__item {
                 box-shadow: inset 0px 0px 19px rgba(0, 0, 0, 0.07);
                 text-align: center;
+                width: 180px;
+
+                &__button {
+                    padding: 20px 42px;
+                    background-color: #F0EFEF;
+                    width: 100%;
+
+                    &--active {
+                        background-color: #ffcb00;
+                    }
+                }
             }
         }
     }

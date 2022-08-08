@@ -73,6 +73,11 @@
                 margin: 10px 0;
                 font-size: 24px;
                 line-height: 34px;
+                
+                @media(max-width: 768px) {
+                    font-size: 16px;
+                    line-height: 23px;
+                }
             }
         }
     }

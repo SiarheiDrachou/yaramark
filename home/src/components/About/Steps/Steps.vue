@@ -106,6 +106,11 @@
                 @media(max-width: 968px) {
                     margin-top: 42px;
                 }
+
+                @media(max-width: 768px) {
+                    font-size: 18px;
+                    line-height: 26px;
+                }
             }
 
             &__text {
@@ -115,6 +120,8 @@
                 
                 @media(max-width: 768px) {
                     max-width: 450px;
+                    font-size: 16px;
+                    line-height: 23px;
                 }
 
                 br {
@@ -128,6 +135,11 @@
                     display: block;
                     font-size: 18px;
                     line-height: 21px;
+
+                    @media(max-width: 768px) {
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
                 }
             }
         }

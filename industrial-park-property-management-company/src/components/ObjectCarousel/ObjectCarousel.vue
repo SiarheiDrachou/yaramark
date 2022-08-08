@@ -69,7 +69,7 @@
         &-container {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            grid-template-areas: 'carousel about-teams';
+            grid-template-areas: 'about-teams carousel';
             justify-content: space-between;
             margin-top: 60px;
             grid-gap: 50px;
@@ -89,7 +89,7 @@
             }
 
             ol {
-                list-style-type: none;
+                list-style-type: disc;
                 padding: 0 !important;
             }
         }
@@ -146,6 +146,7 @@
 
             .location {
                 grid-area: location;
+                display: flex;
             }
 
             .year {

@@ -17,9 +17,9 @@
                 <span>ООО «ЯраМарка» </span>
             </p>
 
-            <button class="button--primary">
+            <a class="button--primary" href="#footer">
                 Заказать звонок
-            </button>
+            </a>
         </div>
     </section>
 </template>
@@ -55,6 +55,10 @@
             
             @media(max-width: 640px) {
                 margin: 0 30px;
+            }
+
+            a {
+                color: black;
             }
         }
 

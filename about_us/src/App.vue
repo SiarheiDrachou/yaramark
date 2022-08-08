@@ -2,6 +2,8 @@
     <div id="app" data-server-rendered="true">
         <Header />
 
+        <Navigation />
+
         <PreviewModal v-if="isOpenPreview" />
 
         <main class="main">
@@ -20,10 +22,11 @@
             Header: () => import(/* webpackChunkName: "Home" */ "./components/Header/Header.vue"),
             Footer: () => import(/* webpackChunkName: "Home" */ "./components/Footer/Footer.vue"),
             PreviewModal: () => import(/* webpackChunkName: "Home" */ "./components/PreviewModal/PreviewModal.vue"),
+            Navigation: () => import(/* webpackChunkName: "Home" */ "./components/Navigation/Navigation.vue"),
         },
         computed: {
             ...mapState({
-                isOpenPreview: state => state.isOpenPreview
+                isOpenPreview: state => state.isOpenPreview,
             })
         },
     }
@@ -118,6 +121,7 @@
         border: none !important;
         outline: none !important;
         max-width: 100%;
+        border-radius: 0;
     }
 
     select {
@@ -150,17 +154,6 @@
         min-width: 320px;
     }
 
-    .anchor {
-        display: block;
-        position: absolute;
-        top: -160px;
-        visibility: hidden;
-
-        @media (max-width: 1024px) {
-            top: -80px;
-        }
-    }
-
     .button {
 
         &--primary {
@@ -174,6 +167,10 @@
             border: 1px solid#FFCB00;
             background-color: transparent;
             color: black;
+
+            &:hover {
+                background: linear-gradient(100.01deg, #FFCB00 41.72%, #D9A900 104.17%);
+            }
         }
     }
 </style>

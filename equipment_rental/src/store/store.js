@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import axios from 'axios'
-
 Vue.use(Vuex)
 
 export default new Vuex.Store({
@@ -17,8 +16,16 @@ export default new Vuex.Store({
         inputTimeStart: "9:00",
         inputTimeEnd: "10:00",
         isSuccess: 'null',
+        isMobile: false,
+        selectedType: 'Вся техника',
     },
     mutations: {
+        setSelectedType(state, type) {
+            state.selectedType = type;
+        },
+        setIsMobile(state, type) {
+            state.isMobile = type;
+        },
         setIsOpenPreview(state, type) {
             state.isOpenPreview = type;
         },
@@ -49,6 +56,12 @@ export default new Vuex.Store({
         }
     },
     actions: {
+        getSelectedType({commit}, type) {
+            commit('setSelectedType', type);
+        },
+        getIsMobile({commit}, type) {
+            commit('setIsMobile', type === false ? false : true);
+        },
         getIsOpenPreview({commit}, type) {
             commit('setIsOpenPreview', type === false ? false : true);
         },

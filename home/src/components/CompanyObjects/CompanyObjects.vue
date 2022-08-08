@@ -107,9 +107,13 @@
                     font-weight: 500;
                     font-size: 24px;
                     line-height: 34px;
-                    padding: 10px;
+                    padding: 15px;
                     display: block;
                     color: black;
+                }
+
+                &:hover {
+                    background-color: #ffcb00;
                 }
             }
         }

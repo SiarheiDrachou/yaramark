@@ -166,6 +166,10 @@
                     color: black;
                     display: block;
                 }
+
+                &:hover {
+                    background-color: #ffcb00;
+                }
             }
 
             &__item:hover figcaption {

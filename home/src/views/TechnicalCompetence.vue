@@ -1,9 +1,12 @@
 <template>
     <section class="technical-competence">
         <div class="technical-competence-container">
-            <h3 class="technical-competence-container__heading">Сертификаты</h3>
+            <h3 class="technical-competence-container__heading" :class="{'technical-competence-container__heading--active': isCertificates}" @click="isCertificates = !isCertificates">
+                Сертификаты
+                <SubmenuIcon />
+            </h3>
 
-            <ul class="technical-competence-container-list">
+            <ul class="technical-competence-container-list" v-show="isCertificates">
                 <li class="technical-competence-container-list__item" v-for="image in certificates" :key="image.src" @click="openPreview(image)">
                     <img :src="image.src" :alt="image.alt" />
                 </li>
@@ -11,9 +14,12 @@
         </div>
 
         <div class="technical-competence-container">
-            <h3 class="technical-competence-container__heading">Аттестаты</h3>
+            <h3 class="technical-competence-container__heading" :class="{'technical-competence-container__heading--active': isAttestates}" @click="isAttestates = !isAttestates">
+                Аттестаты
+                <SubmenuIcon />
+            </h3>
 
-            <ul class="technical-competence-container-list">
+            <ul class="technical-competence-container-list" v-show="isAttestates">
                 <li class="technical-competence-container-list__item" v-for="image in attestates" :key="image.src" @click="openPreview(image)">
                     <img :src="image.src" :alt="image.alt" />
                 </li>
@@ -21,9 +27,12 @@
         </div>
 
         <div class="technical-competence-container">
-            <h3 class="technical-competence-container__heading">Свидетельства</h3>
+            <h3 class="technical-competence-container__heading" :class="{'technical-competence-container__heading--active': isEvidences}" @click="isEvidences = !isEvidences">
+                Свидетельства
+                <SubmenuIcon />
+            </h3>
 
-            <ul class="technical-competence-container-list">
+            <ul class="technical-competence-container-list" v-show="isEvidences">
                 <li class="technical-competence-container-list__item" v-for="image in evidences" :key="image.src" @click="openPreview(image)">
                     <img :src="image.src" :alt="image.alt" />
                 </li>
@@ -31,9 +40,12 @@
         </div>
 
         <div class="technical-competence-container">
-            <h3 class="technical-competence-container__heading">Отзывы</h3>
+            <h3 class="technical-competence-container__heading" :class="{'technical-competence-container__heading--active': isReviews}" @click="isReviews = !isReviews">
+                Отзывы
+                <SubmenuIcon />
+            </h3>
 
-            <ul class="technical-competence-container-list">
+            <ul class="technical-competence-container-list" v-show="isReviews">
                 <li class="technical-competence-container-list__item" v-for="image in reviews" :key="image.src" @click="openPreview(image)">
                     <img :src="image.src" :alt="image.alt" />
                 </li>
@@ -191,8 +203,15 @@
                         src: require('../assets/sertificats/review10.jpg'),
                         alt: ``
                     },
-                ]
+                ],
+                isCertificates: true,
+                isAttestates: false,
+                isEvidences: false,
+                isReviews: false,
             }
+        },
+        components: {
+            SubmenuIcon: () => import(/* webpackChunkName: "Home" */ "../assets/svg/SubmenuIcon.vue"),
         },
         methods: {
             openPreview(review) {
@@ -223,6 +242,20 @@
                 font-size: 30px;
                 line-height: 42px;
                 margin-bottom: 30px;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+
+                &--active {
+
+                    svg {
+                        transform: rotate(180deg);
+                    }
+                }
+
+                svg {
+                    margin-left: 25px;
+                }
             }
 
             &-list {

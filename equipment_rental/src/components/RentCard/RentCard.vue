@@ -37,6 +37,10 @@
                 <span>Глубина копания</span>
                 <span v-text="card.diggingDepth"></span>
             </p>
+            <p v-if="card.count" class="card-description">
+                <span>Количество</span>
+                <span v-text="card.count"></span>
+            </p>
         </div>
 
         <button class="button--secondary" @click="getIsOpenRequest(true)">Заказать</button>
@@ -73,11 +77,15 @@
                 font-weight: 500;
                 font-size: 17px;
                 line-height: 28px;
+
+                @media(max-width: 968px) {
+                    height: 56px;
+                }
             }
         }
 
         .card-container {
-            height: 145px;
+            height: 181px;
         }
 
         .card-type {
@@ -92,6 +100,8 @@
             font-size: 18px;
             line-height: 25px;
             margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
         }
 
         button {

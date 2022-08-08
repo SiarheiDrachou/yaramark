@@ -16,7 +16,15 @@
 
 <style lang="scss">
     .banner {
-        padding: 130px 0;
+        padding: 130px 15px;
+
+        @media(max-width: 1340px) {
+            padding: 65px 15px;
+        }
+
+        @media(max-width: 500px) {
+            height: 600px;
+        }
 
         &--bg {
             background-size: cover;
@@ -34,6 +42,12 @@
                 margin-bottom: 50px;
                 font-size: 48px;
                 line-height: 56px;
+
+                @media(max-width: 768px) {
+                    font-size: 30px;
+                    line-height: 36px;
+                    margin-bottom: 20px;
+                }
             }
 
             &__text {
@@ -41,6 +55,11 @@
                 margin: 0 auto;
                 font-size: 30px;
                 line-height: 42px;
+
+                @media(max-width: 768px) {
+                    font-size: 16px;
+                    line-height: 23px;
+                }
             }
         }
     }

@@ -1,12 +1,12 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import axios from 'axios'
-
 Vue.use(Vuex)
 
 export default new Vuex.Store({
     state: {
         isOpenPreview: false,
+        isOpenRequest: false,
         previewSrc: null,
         previewAlt: null,
         carouselId: null,
@@ -16,10 +16,21 @@ export default new Vuex.Store({
         inputTimeStart: "9:00",
         inputTimeEnd: "10:00",
         isSuccess: 'null',
+        isMobile: false,
+        selectedType: 'Вся техника',
     },
     mutations: {
+        setSelectedType(state, type) {
+            state.selectedType = type;
+        },
+        setIsMobile(state, type) {
+            state.isMobile = type;
+        },
         setIsOpenPreview(state, type) {
             state.isOpenPreview = type;
+        },
+        setIsOpenRequest(state, type) {
+            state.isOpenRequest = type;
         },
         setPreviewParams(state, params) {
             state.previewSrc = params.WEBPsrc || params.src;
@@ -45,17 +56,20 @@ export default new Vuex.Store({
         }
     },
     actions: {
+        getSelectedType({commit}, type) {
+            commit('setSelectedType', type);
+        },
+        getIsMobile({commit}, type) {
+            commit('setIsMobile', type === false ? false : true);
+        },
         getIsOpenPreview({commit}, type) {
             commit('setIsOpenPreview', type === false ? false : true);
         },
+        getIsOpenRequest({commit}, type) {
+            commit('setIsOpenRequest', type === false ? false : true);
+        },
         getPreviewParams({commit}, params) {
             commit('setPreviewParams', params);
-        },
-        getText({commit}) {
-            axios.get(`https://yaramark.by/getData`) // для prerender plagin
-            // axios.get(`http://localhost:3000/getData`) // для локального запуска
-                .then(function (res) {commit('setText', res.data);})
-                .catch(function (err) {console.log(err);});
         },
         getInputPhone({commit}, value) {
             commit('setInputPhone', value);

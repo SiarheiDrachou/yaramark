@@ -167,8 +167,12 @@
                     this.getInputTimeEnd(this.$refs.inputTimeEnds.value);
 
                     this.sendFormRequest();
+                    return ;
                 }
-            },            
+
+                this.isBlurPhoneNumber = false;
+                this.isBlurName = false;
+            },
             ...mapActions({
                 getInputPhone: 'getInputPhone',
                 getInputName: 'getInputName',
