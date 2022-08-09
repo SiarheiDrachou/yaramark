@@ -1,30 +1,36 @@
 <template>
     <section class="object-description">
-        <a class="object-description__link-back" href="/objects">
-            <ArrowBack />
+        <div class="object-description--top">
+            <a class="object-description__link-back" href="/objects">
+                <ArrowBack />
 
-            Назад к проектам
-        </a>
-        <ul class="object-description-list">
-            <li class="object-description-list__item location">
-                <Location />
+                Назад к проектам
+            </a>
 
-                <p v-text="azs64.location"></p>
-            </li>
-            <li class="object-description-list__item year">
-                <span>Год постройки</span>
-                <span v-text="azs64.year"></span>
-            </li>
-            <li class="object-description-list__item sqrt">
-                <span>Площадь объекта</span>
-                <span v-html="azs64.sqrt"></span>
-            </li>
-        </ul>
-        <div class="object-description-container">
-            <ObjectCarousel :images="azs64.images" />
+            <h3 class="object-description__heading">
+                Строительство автозаправочной станции №64
+            </h3>
 
-            <AboutTeams :lists="azs64.lists" :heading="azs64.heading" :headingStyle="azs64.headingStyle || ''" :arrayStyle="azs64.arrayStyle || ''"/>
+            <ul class="object-description-list">
+                <li class="object-description-list__item location">
+                    <Location />
+
+                    <p v-text="azs64.location"></p>
+                </li>
+                <li class="object-description-list__item year">
+                    <span>Год постройки</span>
+                    <span v-text="azs64.year"></span>
+                </li>
+                <li class="object-description-list__item sqrt">
+                    <span>Площадь объекта</span>
+                    <span v-html="azs64.sqrt"></span>
+                </li>
+            </ul>
         </div>
+        
+        <ObjectCarousel :images="azs64.images" />
+
+        <AboutTeams :lists="azs64.lists" :heading="azs64.heading" :headingStyle="azs64.headingStyle || ''" :arrayStyle="azs64.arrayStyle || ''"/>
     </section>
 </template>
 

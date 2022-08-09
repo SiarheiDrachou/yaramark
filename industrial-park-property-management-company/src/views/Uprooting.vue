@@ -1,31 +1,36 @@
 <template>
     <section class="object-description">
-        <a class="object-description__link-back" href="/objects">
-            <ArrowBack />
+        <div class="object-description--top">
+            <a class="object-description__link-back" href="/objects">
+                <ArrowBack />
 
-            Назад к проектам
-        </a>
-        <ul class="object-description-list">
-            <li class="object-description-list__item location">
-                <Location />
+                Назад к проектам
+            </a>
 
-                <p v-text="uprooting.location"></p>
-            </li>
-            <li class="object-description-list__item year">
-                <span>Год постройки</span>
-                <span v-text="uprooting.year"></span>
-            </li>
-            <li class="object-description-list__item sqrt">
-                <span>Площадь объекта</span>
-                <span v-html="uprooting.sqrt"></span>
-            </li>
-        </ul>
+            <h3 class="object-description__heading">
+                Корчевание и вытряхивание пней с расчисткой территории
+            </h3>
 
-        <div class="object-description-container">
-            <ObjectCarousel :images="uprooting.images" />
+            <ul class="object-description-list">
+                <li class="object-description-list__item location">
+                    <Location />
 
-            <AboutTeams :lists="uprooting.lists" :heading="uprooting.heading" :headingStyle="uprooting.headingStyle || ''" :arrayStyle="uprooting.arrayStyle || ''"/>
+                    <p v-text="uprooting.location"></p>
+                </li>
+                <li class="object-description-list__item year">
+                    <span>Год постройки</span>
+                    <span v-text="uprooting.year"></span>
+                </li>
+                <li class="object-description-list__item sqrt">
+                    <span>Площадь объекта</span>
+                    <span v-html="uprooting.sqrt"></span>
+                </li>
+            </ul>
         </div>
+
+        <ObjectCarousel :images="uprooting.images" />
+
+        <AboutTeams :lists="uprooting.lists" :heading="uprooting.heading" :headingStyle="uprooting.headingStyle || ''" :arrayStyle="uprooting.arrayStyle || ''"/>
     </section>
 </template>
 

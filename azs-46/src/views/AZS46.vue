@@ -1,36 +1,36 @@
 <template>
     <section class="object-description">
-        <a class="object-description__link-back" href="/objects">
-            <ArrowBack />
+        <div class="object-description--top">
+            <a class="object-description__link-back" href="/objects">
+                <ArrowBack />
 
-            Назад к проектам
-        </a>
+                Назад к проектам
+            </a>
 
-        <h3 class="object-description__heading">
-            Реконструкция АЗС № 46
-        </h3>
+            <h3 class="object-description__heading">
+                Реконструкция АЗС № 46
+            </h3>
 
-        <ul class="object-description-list">
-            <li class="object-description-list__item location">
-                <Location />
+            <ul class="object-description-list">
+                <li class="object-description-list__item location">
+                    <Location />
 
-                <p v-text="azs46.location"></p>
-            </li>
-            <li class="object-description-list__item year">
-                <span>Год постройки</span>
-                <span v-text="azs46.year"></span>
-            </li>
-            <li class="object-description-list__item sqrt">
-                <span>Площадь объекта</span>
-                <span v-html="azs46.sqrt"></span>
-            </li>
-        </ul>
-
-        <div class="object-description-container">
-            <ObjectCarousel :images="azs46.images" />
-
-            <AboutTeams :lists="azs46.lists" :heading="azs46.heading" :headingStyle="azs46.headingStyle || ''" :arrayStyle="azs46.arrayStyle || ''"/>
+                    <p v-text="azs46.location"></p>
+                </li>
+                <li class="object-description-list__item year">
+                    <span>Год постройки</span>
+                    <span v-text="azs46.year"></span>
+                </li>
+                <li class="object-description-list__item sqrt">
+                    <span>Площадь объекта</span>
+                    <span v-html="azs46.sqrt"></span>
+                </li>
+            </ul>
         </div>
+
+        <ObjectCarousel :images="azs46.images" />
+
+        <AboutTeams :lists="azs46.lists" :heading="azs46.heading" :headingStyle="azs46.headingStyle || ''" :arrayStyle="azs46.arrayStyle || ''"/>
     </section>
 </template>
 
