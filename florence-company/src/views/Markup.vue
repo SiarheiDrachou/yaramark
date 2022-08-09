@@ -1,30 +1,36 @@
 <template>
     <section class="object-description">
-        <a class="object-description__link-back" href="/objects">
-            <ArrowBack />
+        <div class="object-description--top">
+            <a class="object-description__link-back" href="/objects">
+                <ArrowBack />
 
-            Назад к проектам
-        </a>
-        <ul class="object-description-list">
-            <li class="object-description-list__item location">
-                <Location />
+                Назад к проектам
+            </a>
 
-                <p v-text="markup.location"></p>
-            </li>
-            <li class="object-description-list__item year">
-                <span>Год постройки</span>
-                <span v-text="markup.year"></span>
-            </li>
-            <li class="object-description-list__item sqrt">
-                <span>Площадь объекта</span>
-                <span v-html="markup.sqrt"></span>
-            </li>
-        </ul>
-        <div class="object-description-container">
-            <ObjectCarousel :images="markup.images" />
+            <h3 class="object-description__heading">
+                Техническая модернизация здания специализированного для производства электротехнического, электронного и оптического оборудования
+            </h3>
 
-            <AboutTeams :lists="markup.lists" :heading="markup.heading" :headingStyle="markup.headingStyle || ''" :arrayStyle="markup.arrayStyle || ''"/>
+            <ul class="object-description-list">
+                <li class="object-description-list__item location">
+                    <Location />
+
+                    <p v-text="markup.location"></p>
+                </li>
+                <li class="object-description-list__item year">
+                    <span>Год постройки</span>
+                    <span v-text="markup.year"></span>
+                </li>
+                <li class="object-description-list__item sqrt">
+                    <span>Площадь объекта</span>
+                    <span v-html="markup.sqrt"></span>
+                </li>
+            </ul>
         </div>
+
+        <ObjectCarousel :images="markup.images" />
+
+        <AboutTeams :lists="markup.lists" :heading="markup.heading" :headingStyle="markup.headingStyle || ''" :arrayStyle="markup.arrayStyle || ''"/>
     </section>
 </template>
 

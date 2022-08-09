@@ -1,31 +1,37 @@
 <template>
     <section class="object-description">
-        <a class="object-description__link-back" href="/objects">
-            <ArrowBack />
+        
+        <div class="object-description--top">
+            <a class="object-description__link-back" href="/objects">
+                <ArrowBack />
 
-            Назад к проектам
-        </a>
-        <ul class="object-description-list">
-            <li class="object-description-list__item location">
-                <Location />
+                Назад к проектам
+            </a>
 
-                <p v-text="azs80.location"></p>
-            </li>
-            <li class="object-description-list__item year">
-                <span>Год постройки</span>
-                <span v-text="azs80.year"></span>
-            </li>
-            <li class="object-description-list__item sqrt">
-                <span>Площадь объекта</span>
-                <span v-html="azs80.sqrt"></span>
-            </li>
-        </ul>
+            <h3 class="object-description__heading">
+                Реконструкция АЗС № 80
+            </h3>
 
-        <div class="object-description-container">
-            <ObjectCarousel :images="azs80.images" />
+            <ul class="object-description-list">
+                <li class="object-description-list__item location">
+                    <Location />
 
-            <AboutTeams :lists="azs80.lists" :heading="azs80.heading" :headingStyle="azs80.headingStyle || ''" :arrayStyle="azs80.arrayStyle || ''"/>
+                    <p v-text="azs80.location"></p>
+                </li>
+                <li class="object-description-list__item year">
+                    <span>Год постройки</span>
+                    <span v-text="azs80.year"></span>
+                </li>
+                <li class="object-description-list__item sqrt">
+                    <span>Площадь объекта</span>
+                    <span v-html="azs80.sqrt"></span>
+                </li>
+            </ul>
         </div>
+        
+        <ObjectCarousel :images="azs80.images" />
+
+        <AboutTeams :lists="azs80.lists" :heading="azs80.heading" :headingStyle="azs80.headingStyle || ''" :arrayStyle="azs80.arrayStyle || ''"/>
     </section>
 </template>
 

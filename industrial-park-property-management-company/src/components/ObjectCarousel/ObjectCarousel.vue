@@ -56,41 +56,43 @@
 <style lang="scss">
     .object-description {
         max-width: 1280px;
-        margin: 130px auto;
+        margin: 40px auto 130px;
+        display: grid;
+        grid-template-areas: 'info carousel'
+                             'list carousel';
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr;
+        grid-gap: 80px 32px;
 
         @media(max-width: 1340px) {
-            margin: 130px 50px;
+            margin: 40px 50px 130px;
+        }
+
+        @media(max-width: 1280px) {
+            grid-template-areas: 'info'
+                                 'carousel'
+                                 'list';
+            grid-template-rows: auto auto 1fr;
+            grid-template-columns: 1fr;
         }
 
         @media(max-width: 968px) {
             margin: 65px 50px;
         }
 
-        &-container {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-areas: 'about-teams carousel';
-            justify-content: space-between;
-            margin-top: 60px;
-            grid-gap: 50px;
+        ol {
+            list-style-type: disc;
+        }
 
-            @media(max-width: 1240px) {
-                grid-template-columns: 1fr;
-                grid-template-areas: 'carousel'
-                                     'about-teams';
-            }
+        &--top {
+            grid-area: info;
+        }
 
-            .carousel {
-                grid-area: carousel;
-            }
+        .carousel {
+            grid-area: carousel;
 
-            .about-teams {
-                grid-area: about-teams;
-            }
-
-            ol {
-                list-style-type: disc;
-                padding: 0 !important;
+            @media(min-width: 1240px) {
+                margin-top: 60px;
             }
         }
 
@@ -98,9 +100,12 @@
             font-size: 20px;
             line-height: 24px;
             display: flex;
-            justify-content: center;
             align-items: center;
             margin-bottom: 20px;
+
+            @media(max-width: 1280px) {
+                justify-content: center;
+            }
             
             svg {
                 margin-right: 15px;
@@ -111,7 +116,10 @@
             font-size: 20px;
             line-height: 28px;
             margin: 27px 0 20px;
-            text-align: center;
+
+            @media(max-width: 1280px) {
+                text-align: center;
+            }
         }
 
         &-list {
@@ -121,6 +129,7 @@
             grid-template-columns: repeat(2, 1fr);
             grid-gap: 30px;
             justify-content: space-between;
+            grid-area: list;
 
             @media(max-width: 640px) {
                 grid-template-columns: repeat(2, 120px);
@@ -131,8 +140,15 @@
                 grid-template-rows: auto 1fr;
                 grid-auto-flow: row;
                 grid-gap: 10px;
-                justify-content: center;
                 text-align: center;
+
+                @media(min-width: 1280px) {
+                    justify-content: space-between;
+                }
+
+                @media(max-width: 1280px) {
+                    justify-content: center;
+                }
 
                 span {
                     display: block;
@@ -146,7 +162,18 @@
 
             .location {
                 grid-area: location;
-                display: flex;
+
+                @media(min-width: 1280px) {
+                    display: grid;
+                    grid-template-columns: auto 1fr;
+                    grid-gap: 15px;
+                    text-align: left;
+                }
+
+                @media(max-width: 1280px) {
+                    display: flex;
+                    flex-direction: column;
+                }
             }
 
             .year {
