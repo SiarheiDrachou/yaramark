@@ -143,7 +143,15 @@
 
     #app {
         width: 100%;
+        height: 100%;
         min-width: 320px;
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-rows: auto auto 1fr auto;
+
+        @media(max-width: 1340px) {
+            grid-template-rows: auto 1fr auto;
+        }
     }
 
     .button {
