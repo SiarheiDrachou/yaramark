@@ -93,12 +93,17 @@
 <style lang="scss">
     .header {
 
+        @media(max-width: 1340px) {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
         &-navigation {
             transition: 0.3s linear;
 
             @media(min-width: 1340px) {
                 background-color: #ffcb00;
-                position: relative;
                 transition: 0.5s linear;
                 position: sticky;
                 top: 0;
