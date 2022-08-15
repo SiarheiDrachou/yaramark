@@ -215,7 +215,7 @@
         },
         methods: {
             openPreview(review) {
-                this.getIsOpenPreview();
+                this.getIsOpenPreview(true);
                 this.getPreviewParams(review);
             },
             ...mapActions({

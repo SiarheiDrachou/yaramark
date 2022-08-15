@@ -14,7 +14,7 @@
             <a href="tel:375296888619" class="request-modal-container__button phone">
                 <PhoneLogo />
 
-                Перейти в WhatsApp 
+                По номеру телефона
             </a>
 
             <a href="https://wa.me/375296888619" class="request-modal-container__button watsapp">
