@@ -3,10 +3,11 @@ import App from './App.vue'
 import router from './router/router'
 import store from './store/store'
 
-const VueInputMask = require('vue-inputmask').default
-Vue.config.productionTip = false
+import VueTelInput from 'vue-tel-input';
+import 'vue-tel-input/dist/vue-tel-input.css';
 
-Vue.use(VueInputMask);
+Vue.use(VueTelInput);
+Vue.config.productionTip = false
 
 new Vue({
   el: '#app',

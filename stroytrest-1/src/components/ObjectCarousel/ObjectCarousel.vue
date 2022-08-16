@@ -3,7 +3,10 @@
         <div class="carousel--big">
             <ArrowLeft @selectImage="selectImage" :selectIndex="selectIndex" />
 
-            <img :src="selectSrc" :alt="selectAlt" />
+            <picture>
+                <source :srcset="selectWEBPSrc" type="image/webp">
+                <img :src="selectSrc" :alt="selectAlt" />
+            </picture>
 
             <ArrowRight @selectImage="selectImage" :selectIndex="selectIndex" />
         </div>
@@ -25,6 +28,7 @@
         data() {
             return {
                 selectSrc: this.images[0].src,
+                selectWEBPSrc: this.images[0].WEBPsrc || '',
                 selectAlt: this.images[0].alt,
                 selectIndex: 0,
                 isMounted: true,
@@ -34,18 +38,21 @@
             selectImage(index) {
                 if(index < 0) {
                     this.selectSrc = this.images[0].src;
+                    this.selectWEBPSrc = this.images[0].WEBPsrc || '';
                     this.selectAlt = this.images[0].alt;
                     return ;
                 }
 
-                if(index > this.images.length -1) {
-                    this.selectSrc = this.images[this.images.length -1].src;
-                    this.selectAlt = this.images[this.images.length -1].alt;
+                if(index > this.images.length - 1) {
+                    this.selectSrc = this.images[this.images.length - 1].src;
+                    this.selectWEBPSrc = this.images[this.images.length - 1].WEBPsrc || '';
+                    this.selectAlt = this.images[this.images.length - 1].alt;
 
                     return ;
                 }
 
                 this.selectSrc = this.images[index].src;
+                this.selectWEBPSrc = this.images[index].WEBPsrc || '';
                 this.selectAlt = this.images[index].alt;
                 this.selectIndex = index;
             }

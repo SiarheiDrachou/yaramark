@@ -2,15 +2,8 @@
     <form class="form">
         <fieldset :class="{'error': !isPhoneNumber && !isBlurPhoneNumber}">
             <legend>Номер телефона</legend>
-            <input 
-                type="tel" 
-                class=""
-                v-model="phone"
-                ref="inputPhones"
-                v-mask="{mask: phoneMask, greedy: false }"
-                placeholder="375-(__)-___-__-__"
-                @input="maskCheck"
-            />
+
+            <vue-tel-input v-model="phone" @input="maskCheck" ref="inputPhones"></vue-tel-input>
         </fieldset>
 
         <p class="error-message" v-show="!isPhoneNumber && !isBlurPhoneNumber">Некорректный мобильный номер!</p>
@@ -30,11 +23,12 @@
         <fieldset class="form-timerange">
             <legend>Желаемое время для звонка</legend>
 
-            <div class="form-timerange-container">
-                <div>
+            <div class="form-timerange-container div-select">
+                <div class="div-select">
                     <span>c</span>
                     <select ref="inputTimeStarts" v-model="timeStart">
-                        <option value="9:00" selected>9:00</option>
+                        <option value="8:00" selected>8:00</option>
+                        <option value="9:00">9:00</option>
                         <option value="10:00">10:00</option>
                         <option value="11:00">11:00</option>
                         <option value="12:00">12:00</option>
@@ -46,11 +40,11 @@
                     </select>
                 </div>
 
-                <div>
+                <div class="div-select">
                     <span>до</span>
                     <select ref="inputTimeEnds" v-model="timeEnd">
-                        <option value="9:00">9:00</option>
-                        <option value="10:00" selected>10:00</option>
+                        <option value="9:00" selected>9:00</option>
+                        <option value="10:00">10:00</option>
                         <option value="11:00">11:00</option>
                         <option value="12:00">12:00</option>
                         <option value="13:00">13:00</option>
@@ -83,7 +77,6 @@
     export default {
         data() {
             return {
-                phoneMask: "375-(99)-999-99-99",
                 uploadInput: null,
                 msg: '',
                 isPhoneNumber: false,
@@ -93,8 +86,8 @@
                 phone: null,
                 name: null,
                 comment: '',
-                timeStart: "9:00",
-                timeEnd: "10:00",
+                timeStart: "8:00",
+                timeEnd: "9:00",
                 isDisabled: false,
             };
         },
@@ -114,33 +107,27 @@
                     this.phone = null;
                     this.name = null;
                     this.comment = '';
-                    this.timeStart = "9:00";
-                    this.timeEnd = "10:00";
+                    this.timeStart = "8:00";
+                    this.timeEnd = "9:00";
                     this.isDisabled = false;
                 }
             }
         },
         methods: {
-            maskCheck: function (field) {
-                this.isPhoneNumber = false;
-                this.isBlurPhoneNumber = false;
+            maskCheck: function () {
+                const { _watchers: watchers } = this.$refs.inputPhones;
 
-                if (field.target.inputmask.isValid(this.phone)) {
-                    if (
-                        this.phone &&
-                        (
-                            this.phone.split("-")[1] == "(25)" ||
-                            this.phone.split("-")[1] == "(29)" ||
-                            this.phone.split("-")[1] == "(44)" ||
-                            this.phone.split("-")[1] == "(33)"
-                        )
-                    ) {
-                        this.isPhoneNumber = true;
-                        this.isBlurPhoneNumber = true;
-                    }
-                    else {
-                        this.isPhoneNumber = false;
-                    }
+                if(watchers[4]?.value?.countryCode && !watchers[4]?.value?.valid) {
+                    this.isPhoneNumber = false;
+                    this.isBlurPhoneNumber = false;
+                }
+
+                if(watchers[4]?.value?.valid) {
+                    this.isPhoneNumber = true;
+                    this.isBlurPhoneNumber = true;
+                    this.phone = watchers[4]?.value?.number || null;
+                } else {
+                    this.isPhoneNumber = false;
                 }
             },
             nameCheck() {
@@ -248,7 +235,7 @@
                 max-width: 300px;
             }
 
-            div {
+            .div-select {
                 display: grid;
                 grid-template-columns: auto 1fr !important;
                 grid-gap: 30px !important;
@@ -294,5 +281,10 @@
                 max-width: 50px;
             }
         }
+    }
+
+    .vti__dropdown {
+        width: 160px;
+        background-color: white;
     }
 </style>

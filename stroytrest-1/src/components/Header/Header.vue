@@ -13,7 +13,7 @@
                 </a>
 
                 <p class="header-top__contacts">
-                    <a class="header-top__contacts-link" href="tel:+375296810676">+375 29 681-06-76</a>
+                    <a class="header-top__contacts-link" href="tel:+375445725497">+375 44 572-54-97</a>
                     <a class="header-top__contacts-link" href="mailto:yaramark@mail.ru">yaramark@mail.ru</a>
                 </p>
             </div>
