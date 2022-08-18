@@ -6,7 +6,7 @@ const routes = [
     {
         path: '/',
         name: 'Markup',
-        component:  () => import(/* webpackChunkName: "Home" */ "../views/Markup.vue"),
+        component:  () => import(/* webpackChunkName: "Florence" */ "../views/Markup.vue"),
         props: true
     },
 ]

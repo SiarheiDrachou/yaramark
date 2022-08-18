@@ -15,9 +15,9 @@
 <script>
     export default {
         components: {
-            Header: () => import(/* webpackChunkName: "Home" */ "./components/Header/Header.vue"),
-            Footer: () => import(/* webpackChunkName: "Home" */ "./components/Footer/Footer.vue"),
-            Navigation: () => import(/* webpackChunkName: "Home" */ "./components/Navigation/Navigation.vue"),
+            Header: () => import(/* webpackChunkName: "AZS64" */ "./components/Header/Header.vue"),
+            Footer: () => import(/* webpackChunkName: "AZS64" */ "./components/Footer/Footer.vue"),
+            Navigation: () => import(/* webpackChunkName: "AZS64" */ "./components/Navigation/Navigation.vue"),
         },
     }
 </script>

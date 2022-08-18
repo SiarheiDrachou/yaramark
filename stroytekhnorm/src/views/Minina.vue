@@ -52,26 +52,31 @@
                         {
                             id: 'Minina-1',
                             src: 'https://yaramark.by/img/minina-1.jpg',
+                            WEBPsrc: 'https://yaramark.by/img/minina-1.webp',
                             alt: `«Реконструкция зданий РУП «Стройтехнорм» по ул. Кузьмы Минина 7, 11»`,
                         },
                         {
                             id: 'Minina-2',
                             src: 'https://yaramark.by/img/minina-2.jpg',
+                            WEBPsrc: 'https://yaramark.by/img/minina-2.webp',
                             alt: `«Реконструкция зданий РУП «Стройтехнорм» по ул. Кузьмы Минина 7, 11»`,
                         },
                         {
                             id: 'Minina-3',
                             src: 'https://yaramark.by/img/minina-3.jpg',
+                            WEBPsrc: 'https://yaramark.by/img/minina-3.webp',
                             alt: `«Реконструкция зданий РУП «Стройтехнорм» по ул. Кузьмы Минина 7, 11»`,
                         },
                         {
                             id: 'Minina-4',
                             src: 'https://yaramark.by/img/minina-4.jpg',
+                            WEBPsrc: 'https://yaramark.by/img/minina-4.webp',
                             alt: `«Реконструкция зданий РУП «Стройтехнорм» по ул. Кузьмы Минина 7, 11»`,
                         },
                         {
                             id: 'Minina-5',
                             src: 'https://yaramark.by/img/minina-5.jpg',
+                            WEBPsrc: 'https://yaramark.by/img/minina-5.webp',
                             alt: `«Реконструкция зданий РУП «Стройтехнорм» по ул. Кузьмы Минина 7, 11»`,
                         },
                     ],

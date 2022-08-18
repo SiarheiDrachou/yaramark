@@ -53,9 +53,9 @@
 <script>
     export default {
         components: {
-            Number1: () => import(/* webpackChunkName: "Home" */ "../../../assets/svg/Number1.vue"),
-            Number2: () => import(/* webpackChunkName: "Home" */ "../../../assets/svg/Number2.vue"),
-            Number3: () => import(/* webpackChunkName: "Home" */ "../../../assets/svg/Number3.vue"),
+            Number1: () => import(/* webpackChunkName: "AboutUs" */ "../../../assets/svg/Number1.vue"),
+            Number2: () => import(/* webpackChunkName: "AboutUs" */ "../../../assets/svg/Number2.vue"),
+            Number3: () => import(/* webpackChunkName: "AboutUs" */ "../../../assets/svg/Number3.vue"),
         },
     }
 </script>

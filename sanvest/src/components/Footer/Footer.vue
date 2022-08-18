@@ -33,8 +33,8 @@
 <script>
     export default {
         components: {
-            Logo: () => import(/* webpackChunkName: "Home" */ "../../assets/svg/Logo.vue"),
-            Form: () => import(/* webpackChunkName: "Home" */ "../Form/Form.vue"),
+            Logo: () => import(/* webpackChunkName: "Ruxtex" */ "../../assets/svg/Logo.vue"),
+            Form: () => import(/* webpackChunkName: "Ruxtex" */ "../Form/Form.vue"),
         },
         computed: {
             currentYear() {

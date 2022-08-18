@@ -9,8 +9,8 @@
 <script>
     export default {
         components: {
-            Steps: () => import(/* webpackChunkName: "Home" */ "./Steps/Steps.vue"),
-            Description: () => import(/* webpackChunkName: "Home" */ "./Description/Description.vue"),
+            Steps: () => import(/* webpackChunkName: "AboutUs" */ "./Steps/Steps.vue"),
+            Description: () => import(/* webpackChunkName: "AboutUs" */ "./Description/Description.vue"),
         },
     }
 </script>

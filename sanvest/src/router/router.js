@@ -6,7 +6,7 @@ const routes = [
     {
         path: '/',
         name: 'Ruxtex',
-        component:  () => import(/* webpackChunkName: "Home" */ "../views/Ruxtex.vue"),
+        component:  () => import(/* webpackChunkName: "Ruxtex" */ "../views/Ruxtex.vue"),
         props: true
     },
 ]

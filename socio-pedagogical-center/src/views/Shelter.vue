@@ -53,36 +53,43 @@
                         {
                             id: 'shelter-1',
                             src: 'https://yaramark.by/img/shelter-1.jpg',
+                            WEBPsrc: 'https://yaramark.by/img/shelter-1.webp',
                             alt: `Благоустройство территории детского социального приюта по адресу: г. Минск, ул. М. Танка, 34а. Благотворительность`,
                         },
                         {
                             id: 'shelter-2',
                             src: 'https://yaramark.by/img/shelter-2.jpg',
+                            WEBPsrc: 'https://yaramark.by/img/shelter-2.webp',
                             alt: `Благоустройство территории детского социального приюта по адресу: г. Минск, ул. М. Танка, 34а. Благотворительность`,
                         },
                         {
                             id: 'shelter-3',
                             src: 'https://yaramark.by/img/shelter-3.jpg',
+                            WEBPsrc: 'https://yaramark.by/img/shelter-3.webp',
                             alt: `Благоустройство территории детского социального приюта по адресу: г. Минск, ул. М. Танка, 34а. Благотворительность`,
                         },
                         {
                             id: 'shelter-4',
                             src: 'https://yaramark.by/img/shelter-4.jpg',
+                            WEBPsrc: 'https://yaramark.by/img/shelter-4.webp',
                             alt: `Благоустройство территории детского социального приюта по адресу: г. Минск, ул. М. Танка, 34а. Благотворительность`,
                         },
                         {
                             id: 'shelter-5',
                             src: 'https://yaramark.by/img/shelter-5.jpg',
+                            WEBPsrc: 'https://yaramark.by/img/shelter-5.webp',
                             alt: `Благоустройство территории детского социального приюта по адресу: г. Минск, ул. М. Танка, 34а. Благотворительность`,
                         },
                         {
                             id: 'shelter-6',
                             src: 'https://yaramark.by/img/shelter-6.jpg',
+                            WEBPsrc: 'https://yaramark.by/img/shelter-6.webp',
                             alt: `Благоустройство территории детского социального приюта по адресу: г. Минск, ул. М. Танка, 34а. Благотворительность`,
                         },
                         {
                             id: 'shelter-7',
                             src: 'https://yaramark.by/img/shelter-7.jpg',
+                            WEBPsrc: 'https://yaramark.by/img/shelter-7.webp',
                             alt: `Благоустройство территории детского социального приюта по адресу: г. Минск, ул. М. Танка, 34а. Благотворительность`,
                         },
                     ],

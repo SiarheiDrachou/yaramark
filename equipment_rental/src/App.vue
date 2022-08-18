@@ -19,10 +19,10 @@
 
     export default {
         components: {
-            Header: () => import(/* webpackChunkName: "Home" */ "./components/Header/Header.vue"),
-            Footer: () => import(/* webpackChunkName: "Home" */ "./components/Footer/Footer.vue"),
-            RequestModal: () => import(/* webpackChunkName: "Home" */ "./components/RequestModal/RequestModal.vue"),
-            Navigation: () => import(/* webpackChunkName: "Home" */ "./components/Navigation/Navigation.vue"),
+            Header: () => import(/* webpackChunkName: "EquipmentRental" */ "./components/Header/Header.vue"),
+            Footer: () => import(/* webpackChunkName: "EquipmentRental" */ "./components/Footer/Footer.vue"),
+            RequestModal: () => import(/* webpackChunkName: "EquipmentRental" */ "./components/RequestModal/RequestModal.vue"),
+            Navigation: () => import(/* webpackChunkName: "EquipmentRental" */ "./components/Navigation/Navigation.vue"),
         },
         computed: {
             ...mapState({

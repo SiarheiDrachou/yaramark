@@ -53,36 +53,43 @@
                         {
                             id: 'vileyka-1',
                             src: 'https://yaramark.by/img/vileyka-1.jpg',
+                            WEBPsrc: 'https://yaramark.by/img/vileyka-1.webp',
                             alt: `Приход храма Покрова Пресвятой Богородицы г. Вилейка Молодечненская епархия Белорусской Православной церкви`,
                         },
                         {
                             id: 'vileyka-2',
                             src: 'https://yaramark.by/img/vileyka-2.jpg',
+                            WEBPsrc: 'https://yaramark.by/img/vileyka-2.webp',
                             alt: `Приход храма Покрова Пресвятой Богородицы г. Вилейка Молодечненская епархия Белорусской Православной церкви`,
                         },
                         {
                             id: 'vileyka-3',
                             src: 'https://yaramark.by/img/vileyka-3.jpg',
+                            WEBPsrc: 'https://yaramark.by/img/vileyka-3.webp',
                             alt: `Приход храма Покрова Пресвятой Богородицы г. Вилейка Молодечненская епархия Белорусской Православной церкви`,
                         },
                         {
                             id: 'vileyka-4',
                             src: 'https://yaramark.by/img/vileyka-4.jpg',
+                            WEBPsrc: 'https://yaramark.by/img/vileyka-4.webp',
                             alt: `Приход храма Покрова Пресвятой Богородицы г. Вилейка Молодечненская епархия Белорусской Православной церкви`,
                         },
                         {
                             id: 'vileyka-5',
                             src: 'https://yaramark.by/img/vileyka-5.jpg',
+                            WEBPsrc: 'https://yaramark.by/img/vileyka-5.webp',
                             alt: `Приход храма Покрова Пресвятой Богородицы г. Вилейка Молодечненская епархия Белорусской Православной церкви`,
                         },
                         {
                             id: 'vileyka-6',
                             src: 'https://yaramark.by/img/vileyka-6.jpg',
+                            WEBPsrc: 'https://yaramark.by/img/vileyka-6.webp',
                             alt: `Приход храма Покрова Пресвятой Богородицы г. Вилейка Молодечненская епархия Белорусской Православной церкви`,
                         },
                         {
                             id: 'vileyka-7',
                             src: 'https://yaramark.by/img/vileyka-7.jpg',
+                            WEBPsrc: 'https://yaramark.by/img/vileyka-7.webp',
                             alt: `Приход храма Покрова Пресвятой Богородицы г. Вилейка Молодечненская епархия Белорусской Православной церкви`,
                         },
                     ],

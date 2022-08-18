@@ -6,7 +6,7 @@ const routes = [
     {
         path: '/',
         name: 'TechnicalCompetence',
-        component:  () => import(/* webpackChunkName: "technicalCompetence" */ "../views/TechnicalCompetence.vue"),
+        component:  () => import(/* webpackChunkName: "TechnicalCompetence" */ "../views/TechnicalCompetence.vue"),
         props: true
     },
 ]
