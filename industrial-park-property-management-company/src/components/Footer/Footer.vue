@@ -33,8 +33,8 @@
 <script>
     export default {
         components: {
-            Logo: () => import(/* webpackChunkName: "Uprooting" */ */ "../../assets/svg/Logo.vue"),
-            Form: () => import(/* webpackChunkName: "Uprooting" */ */ "../Form/Form.vue"),
+            Logo: () => import(/* webpackChunkName: "Uprooting" */ "../../assets/svg/Logo.vue"),
+            Form: () => import(/* webpackChunkName: "Uprooting" */ "../Form/Form.vue"),
         },
         computed: {
             currentYear() {

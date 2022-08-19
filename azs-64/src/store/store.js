@@ -8,6 +8,7 @@ export default new Vuex.Store({
         isOpenPreview: false,
         isOpenRequest: false,
         previewSrc: null,
+        previewWEBPSrc: null,
         previewAlt: null,
         carouselId: null,
         inputPhone: null,
@@ -33,7 +34,8 @@ export default new Vuex.Store({
             state.isOpenRequest = type;
         },
         setPreviewParams(state, params) {
-            state.previewSrc = params.WEBPsrc || params.src;
+            state.previewSrc = params.src;
+            state.previewWEBPSrc = params.WEBPsrc;
             state.previewAlt = params.alt;
         },
         setInputPhone(state, value) {

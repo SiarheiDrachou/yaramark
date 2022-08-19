@@ -2,7 +2,16 @@
     <div class="preview-modal" @click="getIsOpenPreview(false)">
         <Close />
         
-        <img :src="previewSrc" :alt="previewAlt" />
+        <picture>
+            <source
+                v-if="previewWEBPSrc"
+                :srcset="previewWEBPSrc"
+                :alt="previewAlt"
+                type="image/webp"
+            />
+            
+            <img :src="previewSrc" :alt="previewAlt" />
+        </picture>
     </div>
 </template>
 
@@ -17,6 +26,7 @@
         computed: {
             ...mapState({
                 previewSrc: state => state.previewSrc,
+                previewWEBPSrc: state => state.previewWEBPSrc,
                 previewAlt: state => state.previewAlt,
             }),
         },

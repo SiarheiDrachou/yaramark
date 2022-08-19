@@ -28,9 +28,9 @@
 
     export default {
         components: {
-            CompanyName: () => import(/* webpackChunkName: "Uprooting" */ */ "../../assets/svg/CompanyName.vue"),
-            Logo: () => import(/* webpackChunkName: "Uprooting" */ */ "../../assets/svg/Logo.vue"),
-            Menu: () => import(/* webpackChunkName: "Uprooting" */ */ "../../assets/svg/Menu.vue"),
+            CompanyName: () => import(/* webpackChunkName: "Uprooting" */ "../../assets/svg/CompanyName.vue"),
+            Logo: () => import(/* webpackChunkName: "Uprooting" */ "../../assets/svg/Logo.vue"),
+            Menu: () => import(/* webpackChunkName: "Uprooting" */ "../../assets/svg/Menu.vue"),
         },
         computed: {
             ...mapState({
