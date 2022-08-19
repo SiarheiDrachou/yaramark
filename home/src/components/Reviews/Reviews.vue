@@ -31,20 +31,20 @@
                 reviews: [
                     {
                         id: 1,
-                        src: require(`../../assets/sertificats/review.jpg`),
-                        WEBPsrc: require(`../../assets/sertificats/review.webp`),
+                        src: `https://yaramark.by/img/review.jpg`,
+                        WEBPsrc: `https://yaramark.by/img/review.webp`,
                         alt: `отзыв`,
                     },
                     {
                         id: 2,
-                        src: require(`../../assets/sertificats/review1.jpg`),
-                        WEBPsrc: require(`../../assets/sertificats/review1.webp`),
+                        src: `https://yaramark.by/img/review1.jpg`,
+                        WEBPsrc: `https://yaramark.by/img/review1.webp`,
                         alt: `отзыв`,
                     },
                     {
                         id: 3,
-                        src: require(`../../assets/sertificats/review2.jpg`),
-                        WEBPsrc: require(`../../assets/sertificats/review2.webp`),
+                        src: `https://yaramark.by/img/review2.jpg`,
+                        WEBPsrc: `https://yaramark.by/img/review2.webp`,
                         alt: `отзыв`,
                     },
                 ],
