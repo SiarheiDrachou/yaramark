@@ -6,7 +6,7 @@ const routes = [
     {
         path: '/',
         name: 'Uprooting',
-        component:  () => import(/* webpackChunkName: "Home" */ "../views/Uprooting.vue"),
+        component:  () => import(/* webpackChunkName: "Uprooting" */ */ "../views/Uprooting.vue"),
         props: true
     },
 ]

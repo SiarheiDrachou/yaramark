@@ -6,7 +6,7 @@ const routes = [
     {
         path: '/',
         name: 'Shelter',
-        component:  () => import(/* webpackChunkName: "Home" */ "../views/Shelter.vue"),
+        component:  () => import(/* webpackChunkName: "Socio" */ "../views/Shelter.vue"),
         props: true
     },
 ]

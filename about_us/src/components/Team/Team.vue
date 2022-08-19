@@ -20,7 +20,7 @@
 <script>
     export default {
         components: {
-            Person: () => import(/* webpackChunkName: "Home" */ "../../assets/svg/Person.vue"),
+            Person: () => import(/* webpackChunkName: "AboutUs" */ "../../assets/svg/Person.vue"),
         },
         data() {
             return {

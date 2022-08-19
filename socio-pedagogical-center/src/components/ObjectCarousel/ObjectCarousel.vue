@@ -22,8 +22,8 @@
     export default {
         props: ['images'],
         components: {
-            ArrowLeft: () => import(/* webpackChunkName: "Home" */ "../../assets/svg/ArrowLeft.vue"),
-            ArrowRight: () => import(/* webpackChunkName: "Home" */ "../../assets/svg/ArrowRight.vue"),
+            ArrowLeft: () => import(/* webpackChunkName: "Socio" */ "../../assets/svg/ArrowLeft.vue"),
+            ArrowRight: () => import(/* webpackChunkName: "Socio" */ "../../assets/svg/ArrowRight.vue"),
         },
         data() {
             return {

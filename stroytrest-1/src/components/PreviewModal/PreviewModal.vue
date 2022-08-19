@@ -12,7 +12,7 @@
 
     export default {
         components: {
-            Close: () => import(/* webpackChunkName: "Home" */ "../../assets/svg/Close.vue"),
+            Close: () => import(/* webpackChunkName: "Svisloch" */ "../../assets/svg/Close.vue"),
         },
         computed: {
             ...mapState({

@@ -53,31 +53,37 @@
                         {
                             id: 'AZS80-1',
                             src: 'https://yaramark.by/img/AZS80-1.jpg',
+                            WEBPsrc: 'https://yaramark.by/img/AZS80-1.webp',
                             alt: `«Реконструкция АЗС № 80»`,
                         },
                         {
                             id: 'AZS80-2',
                             src: 'https://yaramark.by/img/AZS80-2.jpg',
+                            WEBPsrc: 'https://yaramark.by/img/AZS80-2.webp',
                             alt: `«Реконструкция АЗС № 80»`,
                         },
                         {
                             id: 'AZS80-3',
                             src: 'https://yaramark.by/img/AZS80-3.jpg',
+                            WEBPsrc: 'https://yaramark.by/img/AZS80-3.webp',
                             alt: `«Реконструкция АЗС № 80»`,
                         },
                         {
                             id: 'AZS80-4',
                             src: 'https://yaramark.by/img/AZS80-4.jpg',
+                            WEBPsrc: 'https://yaramark.by/img/AZS80-4.webp',
                             alt: `«Реконструкция АЗС № 80»`,
                         },
                         {
                             id: 'AZS80-5',
                             src: 'https://yaramark.by/img/AZS80-5.jpg',
+                            WEBPsrc: 'https://yaramark.by/img/AZS80-5.webp',
                             alt: `«Реконструкция АЗС № 80»`,
                         },
                         {
                             id: 'AZS80-6',
                             src: 'https://yaramark.by/img/AZS80-6.jpg',
+                            WEBPsrc: 'https://yaramark.by/img/AZS80-6.webp',
                             alt: `«Реконструкция АЗС № 80»`,
                         },
                     ],

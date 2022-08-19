@@ -6,7 +6,7 @@ const routes = [
     {
         path: '/',
         name: 'AZS-64',
-        component:  () => import(/* webpackChunkName: "Home" */ "../views/AZS64.vue"),
+        component:  () => import(/* webpackChunkName: "AZS64" */ "../views/AZS64.vue"),
         props: true
     },
 ]

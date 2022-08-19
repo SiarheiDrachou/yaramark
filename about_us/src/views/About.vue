@@ -11,9 +11,9 @@
 <script>
     export default {
         components: {
-            Banner: () => import(/* webpackChunkName: "About" */ "../components/Banner/Banner.vue"),
-            AboutDescription: () => import(/* webpackChunkName: "About" */ "../components/AboutDescription/AboutDescription.vue"),
-            Team: () => import(/* webpackChunkName: "About" */ "../components/Team/Team.vue"),            
+            Banner: () => import(/* webpackChunkName: "AboutUs" */ "../components/Banner/Banner.vue"),
+            AboutDescription: () => import(/* webpackChunkName: "AboutUs" */ "../components/AboutDescription/AboutDescription.vue"),
+            Team: () => import(/* webpackChunkName: "AboutUs" */ "../components/Team/Team.vue"),            
         },
         data() {
             return {

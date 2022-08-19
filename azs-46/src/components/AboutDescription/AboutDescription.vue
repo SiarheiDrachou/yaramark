@@ -13,7 +13,7 @@
 <script>
     export default {
         components: {
-            AboutTeams: () => import(/* webpackChunkName: "Home" */ "./AboutTeams.vue"),
+            AboutTeams: () => import(/* webpackChunkName: "AZS46" */ "./AboutTeams.vue"),
         },
         data() {
             return {

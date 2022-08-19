@@ -6,7 +6,7 @@ const routes = [
     {
         path: '/',
         name: 'Minina',
-        component:  () => import(/* webpackChunkName: "Home" */ "../views/Minina.vue"),
+        component:  () => import(/* webpackChunkName: "Minina" */ "../views/Minina.vue"),
         props: true
     },
 ]

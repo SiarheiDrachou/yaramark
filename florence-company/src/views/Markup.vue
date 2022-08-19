@@ -37,10 +37,10 @@
 <script>
     export default {
         components: {
-            Location: () => import(/* webpackChunkName: "Home" */ "../assets/svg/Location.vue"),
-            ObjectCarousel: () => import(/* webpackChunkName: "Home" */ "../components/ObjectCarousel/ObjectCarousel.vue"),
-            AboutTeams: () => import(/* webpackChunkName: "Home" */ "../components/AboutDescription/AboutTeams.vue"),
-            ArrowBack: () => import(/* webpackChunkName: "Home" */ "../assets/svg/ArrowBack.vue"),
+            Location: () => import(/* webpackChunkName: "Florence" */ "../assets/svg/Location.vue"),
+            ObjectCarousel: () => import(/* webpackChunkName: "Florence" */ "../components/ObjectCarousel/ObjectCarousel.vue"),
+            AboutTeams: () => import(/* webpackChunkName: "Florence" */ "../components/AboutDescription/AboutTeams.vue"),
+            ArrowBack: () => import(/* webpackChunkName: "Florence" */ "../assets/svg/ArrowBack.vue"),
         },
         data() {
             return {
@@ -52,31 +52,37 @@
                         {
                             id: 'markup-1',
                             src: 'https://yaramark.by/img/markup-1.jpg',
+                            WEBPsrc: 'https://yaramark.by/img/markup-1.webp',
                             alt: `«Техническая модернизация здания специализированного для производства электротехнического, электронного и оптического оборудования (производственный корпус с АБК) с инвентарным номером 614/С-46617» Нанесение разметки`,
                         },
                         {
                             id: 'markup-2',
                             src: 'https://yaramark.by/img/markup-2.jpg',
+                            WEBPsrc: 'https://yaramark.by/img/markup-2.webp',
                             alt: `«Техническая модернизация здания специализированного для производства электротехнического, электронного и оптического оборудования (производственный корпус с АБК) с инвентарным номером 614/С-46617» Нанесение разметки`,
                         },
                         {
                             id: 'markup-3',
                             src: 'https://yaramark.by/img/markup-3.jpg',
+                            WEBPsrc: 'https://yaramark.by/img/markup-3.webp',
                             alt: `«Техническая модернизация здания специализированного для производства электротехнического, электронного и оптического оборудования (производственный корпус с АБК) с инвентарным номером 614/С-46617» Нанесение разметки`,
                         },
                         {
                             id: 'markup-4',
                             src: 'https://yaramark.by/img/markup-4.jpg',
+                            WEBPsrc: 'https://yaramark.by/img/markup-4.webp',
                             alt: `«Техническая модернизация здания специализированного для производства электротехнического, электронного и оптического оборудования (производственный корпус с АБК) с инвентарным номером 614/С-46617» Нанесение разметки`,
                         },
                         {
                             id: 'markup-5',
                             src: 'https://yaramark.by/img/markup-5.jpg',
+                            WEBPsrc: 'https://yaramark.by/img/markup-5.webp',
                             alt: `«Техническая модернизация здания специализированного для производства электротехнического, электронного и оптического оборудования (производственный корпус с АБК) с инвентарным номером 614/С-46617» Нанесение разметки`,
                         },
                         {
                             id: 'markup-6',
                             src: 'https://yaramark.by/img/markup-6.jpg',
+                            WEBPsrc: 'https://yaramark.by/img/markup-6.webp',
                             alt: `«Техническая модернизация здания специализированного для производства электротехнического, электронного и оптического оборудования (производственный корпус с АБК) с инвентарным номером 614/С-46617» Нанесение разметки`,
                         },
                     ],

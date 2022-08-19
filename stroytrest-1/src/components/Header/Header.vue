@@ -28,9 +28,9 @@
 
     export default {
         components: {
-            CompanyName: () => import(/* webpackChunkName: "Home" */ "../../assets/svg/CompanyName.vue"),
-            Logo: () => import(/* webpackChunkName: "Home" */ "../../assets/svg/Logo.vue"),
-            Menu: () => import(/* webpackChunkName: "Home" */ "../../assets/svg/Menu.vue"),
+            CompanyName: () => import(/* webpackChunkName: "Svisloch" */ "../../assets/svg/CompanyName.vue"),
+            Logo: () => import(/* webpackChunkName: "Svisloch" */ "../../assets/svg/Logo.vue"),
+            Menu: () => import(/* webpackChunkName: "Svisloch" */ "../../assets/svg/Menu.vue"),
         },
         computed: {
             ...mapState({

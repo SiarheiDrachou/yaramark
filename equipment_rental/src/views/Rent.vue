@@ -17,7 +17,7 @@
 
     export default {
         components: {
-            RentCard: () => import(/* webpackChunkName: "Rent" */ "../components/RentCard/RentCard.vue"),
+            RentCard: () => import(/* webpackChunkName: "EquipmentRental" */ "../components/RentCard/RentCard.vue"),
         },
         data() {
             return {

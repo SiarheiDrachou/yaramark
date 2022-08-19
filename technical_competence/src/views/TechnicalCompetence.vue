@@ -211,7 +211,7 @@
             }
         },
         components: {
-            SubmenuIcon: () => import(/* webpackChunkName: "Home" */ "../assets/svg/SubmenuIcon.vue"),
+            SubmenuIcon: () => import(/* webpackChunkName: "TechnicalCompetence" */ "../assets/svg/SubmenuIcon.vue"),
         },
         methods: {
             openPreview(review) {

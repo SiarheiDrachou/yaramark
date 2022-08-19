@@ -59,8 +59,8 @@
 
     export default {
         components: {
-            Close: () => import(/* webpackChunkName: "Home" */ "../../assets/svg/Close.vue"),
-            SubmenuIcon: () => import(/* webpackChunkName: "Home" */ "../../assets/svg/SubmenuIcon.vue"),
+            Close: () => import(/* webpackChunkName: "Uprooting" */ */ "../../assets/svg/Close.vue"),
+            SubmenuIcon: () => import(/* webpackChunkName: "Uprooting" */ */ "../../assets/svg/SubmenuIcon.vue"),
         },
         data() {
             return {

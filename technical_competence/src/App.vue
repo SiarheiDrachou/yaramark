@@ -19,10 +19,10 @@
 
     export default {
         components: {
-            Header: () => import(/* webpackChunkName: "Home" */ "./components/Header/Header.vue"),
-            Footer: () => import(/* webpackChunkName: "Home" */ "./components/Footer/Footer.vue"),
-            Navigation: () => import(/* webpackChunkName: "Home" */ "./components/Navigation/Navigation.vue"),
-            PreviewModal: () => import(/* webpackChunkName: "Home" */ "./components/PreviewModal/PreviewModal.vue"),
+            Header: () => import(/* webpackChunkName: "TechnicalCompetence" */ "./components/Header/Header.vue"),
+            Footer: () => import(/* webpackChunkName: "TechnicalCompetence" */ "./components/Footer/Footer.vue"),
+            Navigation: () => import(/* webpackChunkName: "TechnicalCompetence" */ "./components/Navigation/Navigation.vue"),
+            PreviewModal: () => import(/* webpackChunkName: "TechnicalCompetence" */ "./components/PreviewModal/PreviewModal.vue"),
         },
         computed: {
             ...mapState({
