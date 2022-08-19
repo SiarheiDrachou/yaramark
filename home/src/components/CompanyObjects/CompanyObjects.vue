@@ -34,6 +34,7 @@
                             Государственное учреждение образование  “Социально-педагогический центр Центрального района г. Минска
                         `,
                         src: 'https://yaramark.by/img/shelter-1.jpg',
+                        WEBPsrc: 'https://yaramark.by/img/shelter-1.webp',
                         alt: `Государственное учреждение образование  “Социально-педагогический центр Центрального района г. Минска`,
                         link: '/objects/socio-pedagogical-center'
                     },
@@ -43,6 +44,7 @@
                             «Минский объединенный спортивный клуб федерации профсоюзов»
                         `,
                         src: 'https://yaramark.by/img/courts-8.jpg',
+                        WEBPsrc: 'https://yaramark.by/img/courts-8.webp',
                         alt: `«Минский объединенный спортивный клуб федерации профсоюзов»`,
                         link: '/objects/minsk-united-sports-club'
                     },
@@ -52,6 +54,7 @@
                             «Общество с ограниченной ответственностью «Компания по управлению недвижимостью индустриального парка»»
                         `,
                         src: 'https://yaramark.by/img/uprooting-10.jpg',
+                        WEBPsrc: 'https://yaramark.by/img/uprooting-10.webp',
                         alt: `«Общество с ограниченной ответственностью «Компания по управлению недвижимостью индустриального парка»»`,
                         link: '/objects/industrial-park-property-management-company'
                     },

@@ -6,7 +6,15 @@
 
         <ul class="reviews-list">
             <li class="reviews-list__item" v-for="review in reviews" :key="review.name" @click="openPreview(review)">
-                <img :src="review.src" :alt="review.alt">
+                <picture>
+                    <source
+                        v-if="review.WEBPsrc"
+                        :srcset="review.WEBPsrc"
+                        :alt="review.alt"
+                        type="image/webp"
+                    />
+                    <img :src="review.src" :alt="review.alt">
+                </picture>
             </li>
         </ul>
 
@@ -24,16 +32,19 @@
                     {
                         id: 1,
                         src: require(`../../assets/sertificats/review.jpg`),
+                        WEBPsrc: require(`../../assets/sertificats/review.webp`),
                         alt: `отзыв`,
                     },
                     {
                         id: 2,
                         src: require(`../../assets/sertificats/review1.jpg`),
+                        WEBPsrc: require(`../../assets/sertificats/review1.webp`),
                         alt: `отзыв`,
                     },
                     {
                         id: 3,
                         src: require(`../../assets/sertificats/review2.jpg`),
+                        WEBPsrc: require(`../../assets/sertificats/review2.webp`),
                         alt: `отзыв`,
                     },
                 ],
