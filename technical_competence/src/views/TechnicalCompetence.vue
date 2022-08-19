@@ -62,145 +62,145 @@
             return {
                 certificates: [
                     {
-                        src: require('../assets/sertificats/certificates.jpg'),
+                        src: require('https://yaramark.by/img/certificates.jpg'),
                         alt: `Сертификат соответствия `
                     },
                     {
-                        src: require('../assets/sertificats/certificates1.jpg'),
+                        src: require('https://yaramark.by/img/certificates1.jpg'),
                         alt: `Сертификат соответствия `
                     },
                     {
-                        src: require('../assets/sertificats/certificates2.jpg'),
+                        src: require('https://yaramark.by/img/certificates2.jpg'),
                         alt: `Сертификат соответствия `
                     },
                     {
-                        src: require('../assets/sertificats/certificates3.jpg'),
+                        src: require('https://yaramark.by/img/certificates3.jpg'),
                         alt: `Сертификат соответствия `
                     },
                     {
-                        src: require('../assets/sertificats/certificates4.jpg'),
+                        src: require('https://yaramark.by/img/certificates4.jpg'),
                         alt: `Сертификат соответствия `
                     },
                     {
-                        src: require('../assets/sertificats/certificates5.jpg'),
+                        src: require('https://yaramark.by/img/certificates5.jpg'),
                         alt: `Сертификат соответствия `
                     },
                     {
-                        src: require('../assets/sertificats/certificates6.jpg'),
+                        src: require('https://yaramark.by/img/certificates6.jpg'),
                         alt: `Сертификат соответствия `
                     },
                     {
-                        src: require('../assets/sertificats/certificates7.jpg'),
+                        src: require('https://yaramark.by/img/certificates7.jpg'),
                         alt: `Сертификат соответствия `
                     },
                     {
-                        src: require('../assets/sertificats/certificates8.jpg'),
+                        src: require('https://yaramark.by/img/certificates8.jpg'),
                         alt: `Сертификат соответствия `
                     },
                     {
-                        src: require('../assets/sertificats/certificates9.jpg'),
+                        src: require('https://yaramark.by/img/certificates9.jpg'),
                         alt: `Сертификат соответствия `
                     },
                     {
-                        src: require('../assets/sertificats/certificates10.jpg'),
+                        src: require('https://yaramark.by/img/certificates10.jpg'),
                         alt: `Сертификат соответствия `
                     },
                     {
-                        src: require('../assets/sertificats/certificates11.jpg'),
+                        src: require('https://yaramark.by/img/certificates11.jpg'),
                         alt: `Сертификат соответствия `
                     },
                     {
-                        src: require('../assets/sertificats/certificates12.jpg'),
+                        src: require('https://yaramark.by/img/certificates12.jpg'),
                         alt: `Сертификат соответствия `
                     },
                     {
-                        src: require('../assets/sertificats/certificates13.jpg'),
+                        src: require('https://yaramark.by/img/certificates13.jpg'),
                         alt: `Сертификат соответствия `
                     },
                     {
-                        src: require('../assets/sertificats/certificates14.jpg'),
+                        src: require('https://yaramark.by/img/certificates14.jpg'),
                         alt: `Сертификат соответствия `
                     },
                 ],
                 attestates: [
                     {
-                        src: require('../assets/sertificats/attestate-of-conformity.jpg'),
+                        src: require('https://yaramark.by/img/attestate-of-conformity.jpg'),
                         alt: `Сертификат соответствия`
                     },
                     {
-                        src: require('../assets/sertificats/attestate-of-conformity1.jpg'),
+                        src: require('https://yaramark.by/img/attestate-of-conformity1.jpg'),
                         alt: `Сертификат соответствия`
                     },
                     {
-                        src: require('../assets/sertificats/attestate-of-conformity2.jpg'),
+                        src: require('https://yaramark.by/img/attestate-of-conformity2.jpg'),
                         alt: `Сертификат соответствия`
                     },  
                 ],
                 evidences: [
                     {
-                        src: require('../assets/sertificats/evidence.jpg'),
+                        src: require('https://yaramark.by/img/evidence.jpg'),
                         alt: `Свидетельство о технической компетентности`
                     },
                     {
-                        src: require('../assets/sertificats/evidence1.jpg'),
+                        src: require('https://yaramark.by/img/evidence1.jpg'),
                         alt: `Свидетельство о технической компетентности`
                     },
                     {
-                        src: require('../assets/sertificats/evidence2.jpg'),
+                        src: require('https://yaramark.by/img/evidence2.jpg'),
                         alt: `Свидетельство о технической компетентности`
                     },
                     {
-                        src: require('../assets/sertificats/evidence3.jpg'),
+                        src: require('https://yaramark.by/img/evidence3.jpg'),
                         alt: `Свидетельство о технической компетентности`
                     },
                     {
-                        src: require('../assets/sertificats/evidence4.jpg'),
+                        src: require('https://yaramark.by/img/evidence4.jpg'),
                         alt: `Свидетельство о технической компетентности`
                     },
                 ],
                 reviews: [
                     {
-                        src: require('../assets/sertificats/review.jpg'),
+                        src: require('https://yaramark.by/img/review.jpg'),
                         alt: ``
                     },
                     {
-                        src: require('../assets/sertificats/review1.jpg'),
+                        src: require('https://yaramark.by/img/review1.jpg'),
                         alt: ``
                     },
                     {
-                        src: require('../assets/sertificats/review2.jpg'),
+                        src: require('https://yaramark.by/img/review2.jpg'),
                         alt: ``
                     },
                     {
-                        src: require('../assets/sertificats/review3.jpg'),
+                        src: require('https://yaramark.by/img/review3.jpg'),
                         alt: ``
                     },
                     {
-                        src: require('../assets/sertificats/review4.jpg'),
+                        src: require('https://yaramark.by/img/review4.jpg'),
                         alt: ``
                     },
                     {
-                        src: require('../assets/sertificats/review5.jpg'),
+                        src: require('https://yaramark.by/img/review5.jpg'),
                         alt: ``
                     },
                     {
-                        src: require('../assets/sertificats/review6.jpg'),
+                        src: require('https://yaramark.by/img/review6.jpg'),
                         alt: ``
                     },
                     {
-                        src: require('../assets/sertificats/review7.jpg'),
+                        src: require('https://yaramark.by/img/review7.jpg'),
                         alt: ``
                     },
                     {
-                        src: require('../assets/sertificats/review8.jpg'),
+                        src: require('https://yaramark.by/img/review8.jpg'),
                         alt: ``
                     },
                     {
-                        src: require('../assets/sertificats/review9.jpg'),
+                        src: require('https://yaramark.by/img/review9.jpg'),
                         alt: ``
                     },
                     {
-                        src: require('../assets/sertificats/review10.jpg'),
+                        src: require('https://yaramark.by/img/review10.jpg'),
                         alt: ``
                     },
                 ],

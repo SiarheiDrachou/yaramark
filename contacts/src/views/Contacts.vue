@@ -44,7 +44,11 @@
 <style lang="scss">
     .contacts {
         position: relative;
-        
+        min-height: 100%;
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-rows: auto 1fr;
+
         * {
             width: 100%;
         }
@@ -99,9 +103,9 @@
         }
 
         &-map {
-            position: relative;
 
             iframe {
+                min-height: 100%;
 
                 @media(max-width: 500px) {
                     min-height: 1200px;

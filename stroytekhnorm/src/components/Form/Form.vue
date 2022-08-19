@@ -284,7 +284,11 @@
     }
 
     .vti__dropdown {
-        width: 160px;
         background-color: white;
+    }
+
+    .vti__dropdown-list {
+        min-width: 165px;
+        top: 60px !important;
     }
 </style>
