@@ -1,7 +1,10 @@
 <template>
     <li class="rent-card-list__item">
         <figure>
-            <img :src="card.src" :alt="card.alt">
+            <picture>
+                <source :srcset="card.WEBPSrc" type="image/webp">
+                <img :src="card.src" :alt="card.alt">
+            </picture>
 
             <figcaption v-text="card.name"></figcaption>
         </figure>
