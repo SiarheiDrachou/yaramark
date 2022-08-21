@@ -1,12 +1,13 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import Shelter from "../views/Shelter.vue";
 Vue.use(VueRouter)
 
 const routes = [
     {
         path: '/',
         name: 'Shelter',
-        component:  () => import(/* webpackChunkName: "Socio" */ "../views/Shelter.vue"),
+        component: Shelter,
         props: true
     },
 ]

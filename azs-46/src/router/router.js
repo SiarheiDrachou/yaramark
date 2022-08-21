@@ -1,12 +1,13 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import AZS46 from "../views/AZS46.vue";
 Vue.use(VueRouter)
 
 const routes = [
     {
         path: '/',
         name: 'AZS-46',
-        component:  () => import(/* webpackChunkName: "AZS46" */ "../views/AZS46.vue"),
+        component: AZS46,
         props: true
     },
 ]

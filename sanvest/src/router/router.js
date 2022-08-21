@@ -1,12 +1,13 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import Ruxtex from "../views/Ruxtex.vue";
 Vue.use(VueRouter)
 
 const routes = [
     {
         path: '/',
         name: 'Ruxtex',
-        component:  () => import(/* webpackChunkName: "Ruxtex" */ "../views/Ruxtex.vue"),
+        component: Ruxtex,
         props: true
     },
 ]

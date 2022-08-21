@@ -1,12 +1,13 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import Markup from "../views/Markup.vue";
 Vue.use(VueRouter)
 
 const routes = [
     {
         path: '/',
         name: 'Markup',
-        component:  () => import(/* webpackChunkName: "Florence" */ "../views/Markup.vue"),
+        component: Markup,
         props: true
     },
 ]

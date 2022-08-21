@@ -1,12 +1,13 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import Courts from "../views/Courts.vue";
 Vue.use(VueRouter)
 
 const routes = [
     {
         path: '/',
         name: 'Courts',
-        component:  () => import(/* webpackChunkName: "Courts" */ "../views/Courts.vue"),
+        component: Courts,
         props: true
     },
 ]

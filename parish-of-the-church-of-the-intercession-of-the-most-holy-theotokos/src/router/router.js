@@ -1,15 +1,15 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import Vileyka from "../views/Vileyka.vue";
 Vue.use(VueRouter)
 
 const routes = [
     {
         path: '/',
         name: 'Vileyka',
-        component:  () => import(/* webpackChunkName: "Vileyka" */ "../views/Vileyka.vue"),
+        component: Vileyka,
         props: true
     },
-    
 ]
 
 const router = new VueRouter({

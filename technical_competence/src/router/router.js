@@ -1,12 +1,13 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import TechnicalCompetence from "../views/TechnicalCompetence.vue";
 Vue.use(VueRouter)
 
 const routes = [
     {
         path: '/',
         name: 'TechnicalCompetence',
-        component:  () => import(/* webpackChunkName: "TechnicalCompetence" */ "../views/TechnicalCompetence.vue"),
+        component: TechnicalCompetence,
         props: true
     },
 ]

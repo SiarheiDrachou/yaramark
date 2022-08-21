@@ -1,12 +1,13 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import Minina from "../views/Minina.vue";
 Vue.use(VueRouter)
 
 const routes = [
     {
         path: '/',
         name: 'Minina',
-        component:  () => import(/* webpackChunkName: "Minina" */ "../views/Minina.vue"),
+        component: Minina,
         props: true
     },
 ]

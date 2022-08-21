@@ -1,12 +1,13 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import Svisloch from "../views/Svisloch.vue";
 Vue.use(VueRouter)
 
 const routes = [
     {
         path: '/',
         name: 'Svisloch',
-        component:  () => import(/* webpackChunkName: "Svisloch" */ "../views/Svisloch.vue"),
+        component: Svisloch,
         props: true
     },
 ]

@@ -1,12 +1,13 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
+import Vue from 'vue';
+import VueRouter from 'vue-router';
+import About from "../views/About.vue";
 Vue.use(VueRouter)
 
 const routes = [
     {
         path: '/',
         name: 'About',
-        component:  () => import(/* webpackChunkName: "AboutUs" */ "../views/About.vue"),
+        component:  About,
         props: true
     },
 ]

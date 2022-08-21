@@ -1,12 +1,13 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import EquipmentRental from "../views/Rent.vue";
 Vue.use(VueRouter)
 
 const routes = [
     {
         path: '/',
         name: 'Technical-rent',
-        component:  () => import(/* webpackChunkName: "equipmentRental" */ "../views/Rent.vue"),
+        component: EquipmentRental,
         props: true
     },
 ]

@@ -1,12 +1,13 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import Contacts from "../views/Contacts.vue";
 Vue.use(VueRouter)
 
 const routes = [
     {
         path: '/',
         name: 'Contacts',
-        component:  () => import(/* webpackChunkName: "Contacts" */ "../views/Contacts.vue"),
+        component: Contacts,
         props: true
     },
 ]

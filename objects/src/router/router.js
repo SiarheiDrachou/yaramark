@@ -1,12 +1,13 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import Facilities from "../views/Facilities.vue";
 Vue.use(VueRouter)
 
 const routes = [
     {
         path: '/',
         name: 'Facilities',
-        component:  () => import(/* webpackChunkName: "Objects" */ "../views/Facilities.vue"),
+        component: Facilities,
         props: true
     },
 ]

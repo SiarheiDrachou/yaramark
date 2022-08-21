@@ -1,12 +1,13 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import Uprooting from "../views/Uprooting.vue";
 Vue.use(VueRouter)
 
 const routes = [
     {
         path: '/',
         name: 'Uprooting',
-        component:  () => import(/* webpackChunkName: "Uprooting" */ */ "../views/Uprooting.vue"),
+        component: Uprooting,
         props: true
     },
 ]
