@@ -29,12 +29,17 @@
 </template>
 
 <script>
+    import Location from "../assets/svg/Location.vue";
+    import ObjectCarousel from "../components/ObjectCarousel/ObjectCarousel.vue";
+    import AboutTeams from "../components/AboutDescription/AboutTeams.vue";
+    import ArrowBack from "../assets/svg/ArrowBack.vue";
+
     export default {
         components: {
-            Location: () => import(/* webpackChunkName: "Home" */ "../assets/svg/Location.vue"),
-            ObjectCarousel: () => import(/* webpackChunkName: "Home" */ "../components/ObjectCarousel/ObjectCarousel.vue"),
-            AboutTeams: () => import(/* webpackChunkName: "Home" */ "../components/AboutDescription/AboutTeams.vue"),
-            ArrowBack: () => import(/* webpackChunkName: "Home" */ "../assets/svg/ArrowBack.vue"),
+            Location,
+            ObjectCarousel,
+            AboutTeams,
+            ArrowBack,
         },
         data() {
             return {

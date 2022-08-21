@@ -7,10 +7,13 @@
 </template>
 
 <script>
+    import Steps from "./Steps/Steps.vue";
+    import Description from "./Description/Description.vue";
+
     export default {
         components: {
-            Steps: () => import(/* webpackChunkName: "Home" */ "./Steps/Steps.vue"),
-            Description: () => import(/* webpackChunkName: "Home" */ "./Description/Description.vue"),
+            Steps,
+            Description,
         },
     }
 </script>

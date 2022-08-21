@@ -51,11 +51,15 @@
 </template>
 
 <script>
+    import Number1 from "../../../assets/svg/Number1.vue";
+    import Number2 from "../../../assets/svg/Number2.vue";
+    import Number3 from "../../../assets/svg/Number3.vue";
+
     export default {
         components: {
-            Number1: () => import(/* webpackChunkName: "AboutUs" */ "../../../assets/svg/Number1.vue"),
-            Number2: () => import(/* webpackChunkName: "AboutUs" */ "../../../assets/svg/Number2.vue"),
-            Number3: () => import(/* webpackChunkName: "AboutUs" */ "../../../assets/svg/Number3.vue"),
+            Number1,
+            Number2,
+            Number3,
         },
     }
 </script>

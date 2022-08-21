@@ -25,12 +25,15 @@
 
 <script>
     import { mapState } from 'vuex';
+    import CompanyName from "../../assets/svg/CompanyName.vue";
+    import Logo from "../../assets/svg/Logo.vue";
+    import Menu from "../../assets/svg/Menu.vue";
 
     export default {
         components: {
-            CompanyName: () => import(/* webpackChunkName: "Minina" */ "../../assets/svg/CompanyName.vue"),
-            Logo: () => import(/* webpackChunkName: "Minina" */ "../../assets/svg/Logo.vue"),
-            Menu: () => import(/* webpackChunkName: "Minina" */ "../../assets/svg/Menu.vue"),
+            CompanyName,
+            Logo,
+            Menu,
         },
         computed: {
             ...mapState({

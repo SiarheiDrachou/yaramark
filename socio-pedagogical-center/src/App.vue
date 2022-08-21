@@ -13,11 +13,15 @@
 </template>
 
 <script>
+    import Header from "./components/Header/Header.vue";
+    import Footer from "./components/Footer/Footer.vue";
+    import Navigation from "./components/Navigation/Navigation.vue";
+
     export default {
         components: {
-            Header: () => import(/* webpackChunkName: "Socio" */ "./components/Header/Header.vue"),
-            Footer: () => import(/* webpackChunkName: "Socio" */ "./components/Footer/Footer.vue"),
-            Navigation: () => import(/* webpackChunkName: "Socio" */ "./components/Navigation/Navigation.vue"),
+            Header,
+            Footer,
+            Navigation,
         },
     }
 </script>
@@ -31,14 +35,7 @@
         font-family: 'Roboto';
     }
 
-    // @font-face {
-    //     font-family: 'Raleway Medium';
-    //     src: 
-    //         url('./assets/font/Raleway-Medium.ttf') format('truetype');
-    //     font-weight: 500;
-    //     font-style: normal;
-    //     font-display: swap;
-    // }
+    
 
     body,
     html {

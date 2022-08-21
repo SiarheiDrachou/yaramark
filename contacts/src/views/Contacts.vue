@@ -1,4 +1,3 @@
-<!-- eslint-disable no-irregular-whitespace -->
 <template>
     <section class="contacts">
         <div class="contacts-descrition">
@@ -32,11 +31,15 @@
 </template>
 
 <script>
+    import Location from "../assets/svg/Location.vue";
+    import Phone from "../assets/svg/Phone.vue";
+    import Email from "../assets/svg/Email.vue";
+
     export default {
         components: {
-            Location: () => import(/* webpackChunkName: "Contacts" */ "../assets/svg/Location.vue"),
-            Phone: () => import(/* webpackChunkName: "Contacts" */ "../assets/svg/Phone.vue"),
-            Email: () => import(/* webpackChunkName: "Contacts" */ "../assets/svg/Email.vue"),
+            Location,
+            Phone,
+            Email,
         },
     }
 </script>

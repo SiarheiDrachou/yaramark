@@ -38,13 +38,19 @@
 
 <script>
     import { mapActions } from 'vuex';
+    import Close from "../../assets/svg/Close.vue";
+    import WhatsappLogo from "../../assets/svg/WhatsappLogo.vue";
+    import ViberLogo from "../../assets/svg/ViberLogo.vue";
+    import TelegramLogo from "../../assets/svg/TelegramLogo.vue";
+    import PhoneLogo from "../../assets/svg/PhoneLogo.vue";
+
     export default {
         components: {
-            Close: () => import(/* webpackChunkName: "EquipmentRental" */ "../../assets/svg/Close.vue"),
-            WhatsappLogo: () => import(/* webpackChunkName: "EquipmentRental" */ "../../assets/svg/WhatsappLogo.vue"),
-            ViberLogo: () => import(/* webpackChunkName: "EquipmentRental" */ "../../assets/svg/ViberLogo.vue"),
-            TelegramLogo: () => import(/* webpackChunkName: "EquipmentRental" */ "../../assets/svg/TelegramLogo.vue"),
-            PhoneLogo: () => import(/* webpackChunkName: "EquipmentRental" */ "../../assets/svg/PhoneLogo.vue"),
+            Close,
+            WhatsappLogo,
+            ViberLogo,
+            TelegramLogo,
+            PhoneLogo,
         },
         methods: {
             checkDevice() {

@@ -19,11 +19,14 @@
 </template>
 
 <script>
+    import ArrowLeft from "../../assets/svg/ArrowLeft.vue";
+    import ArrowRight from "../../assets/svg/ArrowRight.vue";
+
     export default {
         props: ['images'],
         components: {
-            ArrowLeft: () => import(/* webpackChunkName: "Uprooting" */ "../../assets/svg/ArrowLeft.vue"),
-            ArrowRight: () => import(/* webpackChunkName: "Uprooting" */ "../../assets/svg/ArrowRight.vue"),
+            ArrowLeft,
+            ArrowRight,
         },
         data() {
             return {

@@ -16,13 +16,17 @@
 
 <script>
     import { mapState } from 'vuex';
+    import Header from "./components/Header/Header.vue";
+    import Footer from "./components/Footer/Footer.vue";
+    import Navigation from "./components/Navigation/Navigation.vue";
+    import RequestModal from "./components/RequestModal/RequestModal.vue";
 
     export default {
         components: {
-            Header: () => import(/* webpackChunkName: "EquipmentRental" */ "./components/Header/Header.vue"),
-            Footer: () => import(/* webpackChunkName: "EquipmentRental" */ "./components/Footer/Footer.vue"),
-            RequestModal: () => import(/* webpackChunkName: "EquipmentRental" */ "./components/RequestModal/RequestModal.vue"),
-            Navigation: () => import(/* webpackChunkName: "EquipmentRental" */ "./components/Navigation/Navigation.vue"),
+            Header,
+            Footer,
+            Navigation,
+            RequestModal,
         },
         computed: {
             ...mapState({
@@ -40,15 +44,6 @@
         scroll-behavior: smooth;
         font-family: 'Roboto';
     }
-
-    // @font-face {
-    //     font-family: 'Raleway Medium';
-    //     src: 
-    //         url('./assets/font/Raleway-Medium.ttf') format('truetype');
-    //     font-weight: 500;
-    //     font-style: normal;
-    //     font-display: swap;
-    // }
 
     body,
     html {

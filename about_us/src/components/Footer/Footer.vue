@@ -31,10 +31,13 @@
 </template>
 
 <script>
+    import Logo from "../../assets/svg/Logo.vue";
+    import Form from "../Form/Form.vue";
+
     export default {
         components: {
-            Logo: () => import(/* webpackChunkName: "AboutUs" */ "../../assets/svg/Logo.vue"),
-            Form: () => import(/* webpackChunkName: "AboutUs" */ "../Form/Form.vue"),
+            Logo,
+            Form,
         },
         computed: {
             currentYear() {

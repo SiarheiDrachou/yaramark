@@ -11,9 +11,11 @@
 </template>
 
 <script>
+    import AboutTeams from "./AboutTeams.vue";
+
     export default {
         components: {
-            AboutTeams: () => import(/* webpackChunkName: "Home" */ "./AboutTeams.vue"),
+            AboutTeams,
         },
         data() {
             return {

@@ -14,10 +14,11 @@
 
 <script>
     import { mapActions, mapState } from 'vuex';
+    import RentCard from "../components/RentCard/RentCard.vue";
 
     export default {
         components: {
-            RentCard: () => import(/* webpackChunkName: "EquipmentRental" */ "../components/RentCard/RentCard.vue"),
+            RentCard,
         },
         data() {
             return {

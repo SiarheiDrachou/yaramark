@@ -16,13 +16,17 @@
 
 <script>
     import { mapState } from 'vuex';
+    import Header from "./components/Header/Header.vue";
+    import Footer from "./components/Footer/Footer.vue";
+    import Navigation from "./components/Navigation/Navigation.vue";
+    import PreviewModal from "./components/PreviewModal/PreviewModal.vue";
 
     export default {
         components: {
-            Header: () => import(/* webpackChunkName: "TechnicalCompetence" */ "./components/Header/Header.vue"),
-            Footer: () => import(/* webpackChunkName: "TechnicalCompetence" */ "./components/Footer/Footer.vue"),
-            Navigation: () => import(/* webpackChunkName: "TechnicalCompetence" */ "./components/Navigation/Navigation.vue"),
-            PreviewModal: () => import(/* webpackChunkName: "TechnicalCompetence" */ "./components/PreviewModal/PreviewModal.vue"),
+            Header,
+            Footer,
+            PreviewModal,
+            Navigation,
         },
         computed: {
             ...mapState({
@@ -41,14 +45,7 @@
         font-family: 'Roboto';
     }
 
-    // @font-face {
-    //     font-family: 'Raleway Medium';
-    //     src: 
-    //         url('./assets/font/Raleway-Medium.ttf') format('truetype');
-    //     font-weight: 500;
-    //     font-style: normal;
-    //     font-display: swap;
-    // }
+    
 
     body,
     html {

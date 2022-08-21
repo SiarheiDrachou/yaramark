@@ -16,12 +16,12 @@
 </template>
 
 <script>
-    import { mapState } from 'vuex';
-    import { mapActions } from 'vuex';
+    import { mapState, mapActions } from 'vuex';
+    import Close from "../../assets/svg/Close.vue";
 
     export default {
         components: {
-            Close: () => import(/* webpackChunkName: "AZS46" */ "../../assets/svg/Close.vue"),
+            Close,
         },
         computed: {
             ...mapState({

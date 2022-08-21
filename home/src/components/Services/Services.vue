@@ -17,7 +17,12 @@
 </template>
 
 <script>
+    import ServiceImage from "./ServiceImage/ServiceImage.vue";
+
     export default {
+        components: {
+            ServiceImage,
+        },
         data() {
             return {
                 services: [
@@ -95,9 +100,6 @@
                     },
                 ]
             }
-        },
-        components: {
-            ServiceImage: () => import(/* webpackChunkName: "Home" */ "./ServiceImage/ServiceImage.vue"),
         },
     }
 </script>

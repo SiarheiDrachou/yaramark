@@ -88,8 +88,12 @@
 
 <script>
     import { mapActions } from 'vuex';
+    import SubmenuIcon from "../assets/svg/SubmenuIcon.vue";
 
     export default {
+        components: {
+            SubmenuIcon,
+        },
         data() {
             return {
                 certificates: [
@@ -275,9 +279,6 @@
                 isEvidences: false,
                 isReviews: false,
             }
-        },
-        components: {
-            SubmenuIcon: () => import(/* webpackChunkName: "TechnicalCompetence" */ "../assets/svg/SubmenuIcon.vue"),
         },
         methods: {
             openPreview(review) {

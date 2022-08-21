@@ -9,11 +9,15 @@
 </template>
 
 <script>
+    import Banner from "../components/Banner/Banner.vue";
+    import AboutDescription from "../components/AboutDescription/AboutDescription.vue";
+    import Team from "../components/Team/Team.vue";
+
     export default {
         components: {
-            Banner: () => import(/* webpackChunkName: "AboutUs" */ "../components/Banner/Banner.vue"),
-            AboutDescription: () => import(/* webpackChunkName: "AboutUs" */ "../components/AboutDescription/AboutDescription.vue"),
-            Team: () => import(/* webpackChunkName: "AboutUs" */ "../components/Team/Team.vue"),            
+            Banner,
+            AboutDescription,
+            Team,            
         },
         data() {
             return {

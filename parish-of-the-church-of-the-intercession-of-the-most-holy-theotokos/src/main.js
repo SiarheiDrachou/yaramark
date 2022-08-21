@@ -1,17 +1,18 @@
 import Vue from 'vue'
 import App from './App.vue'
-import store from './store/store'
 import router from './router/router'
+import store from './store/store'
 
-const VueInputMask = require('vue-inputmask').default
+import VueTelInput from 'vue-tel-input';
+import 'vue-tel-input/dist/vue-tel-input.css';
+
+Vue.use(VueTelInput);
 Vue.config.productionTip = false
-
-Vue.use(VueInputMask);
 
 new Vue({
   el: '#app',
-  router,
   store,
+  router,
   render: h => h(App),
   mounted() {
     window.document.dispatchEvent(new Event('renderer-ready'));

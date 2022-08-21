@@ -56,11 +56,13 @@
 
 <script>
     import { mapActions, mapState } from 'vuex';
+    import Close from "../../assets/svg/Close.vue";
+    import SubmenuIcon from "../../assets/svg/SubmenuIcon.vue";
 
     export default {
         components: {
-            Close: () => import(/* webpackChunkName: "Vileyka" */ "../../assets/svg/Close.vue"),
-            SubmenuIcon: () => import(/* webpackChunkName: "Vileyka" */ "../../assets/svg/SubmenuIcon.vue"),
+            Close,
+            SubmenuIcon,
         },
         data() {
             return {

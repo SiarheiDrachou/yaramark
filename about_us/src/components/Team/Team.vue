@@ -18,9 +18,11 @@
 </template>
 
 <script>
+    import Person from "../../assets/svg/Person.vue";
+
     export default {
         components: {
-            Person: () => import(/* webpackChunkName: "AboutUs" */ "../../assets/svg/Person.vue"),
+            Person,
         },
         data() {
             return {

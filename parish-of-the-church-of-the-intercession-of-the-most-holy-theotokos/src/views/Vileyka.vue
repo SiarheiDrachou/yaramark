@@ -36,12 +36,17 @@
 </template>
 
 <script>
+    import Location from "../assets/svg/Location.vue";
+    import ObjectCarousel from "../components/ObjectCarousel/ObjectCarousel.vue";
+    import AboutTeams from "../components/AboutDescription/AboutTeams.vue";
+    import ArrowBack from "../assets/svg/ArrowBack.vue";
+
     export default {
         components: {
-            Location: () => import(/* webpackChunkName: "Vileyka" */ "../assets/svg/Location.vue"),
-            ObjectCarousel: () => import(/* webpackChunkName: "Vileyka" */ "../components/ObjectCarousel/ObjectCarousel.vue"),
-            AboutTeams: () => import(/* webpackChunkName: "Vileyka" */ "../components/AboutDescription/AboutTeams.vue"),
-            ArrowBack: () => import(/* webpackChunkName: "Vileyka" */ "../assets/svg/ArrowBack.vue"),
+            Location,
+            ObjectCarousel,
+            AboutTeams,
+            ArrowBack,
         },
         data() {
             return {
