@@ -77,11 +77,11 @@
                         count: 2,
                     },
                     {
-                        name: 'Huyndai Robex R260 LC-9s',
+                        name: 'Huyndai Robex R220 LC-9s',
                         technicType: 'Гусеничный',
                         src: 'https://yaramark.by/img/Huyndai-Robex-R260-LC-9S.jpg',
                         WEBPsrc: 'https://yaramark.by/img/Huyndai-Robex-R260-LC-9S.webp',
-                        alt: 'Гусеничный экскаватор Huyndai Robex R260 LC-9s',
+                        alt: 'Гусеничный экскаватор Huyndai Robex R220 LC-9s',
                         ladle: '1,2 м<sup>3</sup>',
                         weight: '22 т',
                         swampCaterpillar: '80 см',

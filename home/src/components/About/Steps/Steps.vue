@@ -15,9 +15,9 @@
                     <span>
                         (Komatsu, Caterpillar, Case, Hitachi,
                         <br />
-                        Bomag, SPLG, HYUNDAI, МАЗ, КАМАЗ,
+                        Bomag, SDLG, HYUNDAI, МАЗ, КАМАЗ,
                         <br />
-                        AMKADOP, BOBCAT комплекс малой механизаций)
+                        AMKADOR, BOBCAT комплекс малой механизаций)
                     </span>
                 </p>
             </div>
