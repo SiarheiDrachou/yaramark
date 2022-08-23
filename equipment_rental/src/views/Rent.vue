@@ -24,7 +24,7 @@
             return {
                 categoryArray: [
                     'Экскаваторы',
-                    'Погрузки',
+                    'Погрузчики',
                     'Каток',
                     'Бульдозеры',
                     'Самосвалы',
@@ -260,7 +260,7 @@
                         trackWidth: '',
                         bladeWidth: '',
                         diggingDepth: '',
-                        type: 'Погрузки',
+                        type: 'Погрузчики',
                         count: 2,
                     },
                     {
@@ -305,7 +305,7 @@
                         trackWidth: '',
                         bladeWidth: '',
                         diggingDepth: '',
-                        type: 'Погрузки',
+                        type: 'Погрузчики',
                         count: 1,
                     },
                 ],

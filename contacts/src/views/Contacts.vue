@@ -10,10 +10,11 @@
                     <p>223053, Минский район, д. Боровляны, улица Березовая роща, 21</p>
                 </li>
 
-                <li class="contacts-descrition-list__item">
+                <li class="contacts-descrition-list__item telephones">
                     <Phone :fill="'#FFCB00'" />
 
-                    <a href="tel:+375445725497">+375 44 572-54-97</a>
+                    <a class="mobile" href="tel:+375445725497">+375 44 572-54-97</a>
+                    <a class="tel" href="tel:+375175120755">+375 17 512-07-55</a>
                 </li>
 
                 <li class="contacts-descrition-list__item">
@@ -100,6 +101,29 @@
 
                     a {
                         color: white;
+                    }
+                }
+
+                .telephones {
+                    display: grid;
+                    grid-template-areas: 'svg mobile'
+                                         'svg tel';
+                    grid-template-columns: auto 1fr;
+                    
+                    .mobile {
+                        grid-area: mobile;
+                        text-align: left;
+                    }
+
+                    .tel {
+                        grid-area: tel;
+                        text-align: left;
+                    }
+
+                    svg {
+                        grid-area: svg;
+                        width: 48px;
+                        height: 48px;
                     }
                 }
             }
