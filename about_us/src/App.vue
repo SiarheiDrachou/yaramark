@@ -46,6 +46,11 @@
     }
 
 
+    button,
+    a {
+        color: black;
+    }
+
     body,
     html {
         margin: 0;
