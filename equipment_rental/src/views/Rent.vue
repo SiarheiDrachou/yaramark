@@ -344,6 +344,10 @@
             margin: 50px 50px 130px;
         }
 
+        @media(max-width: 500px) {
+            margin: 50px 20px 130px;
+        }
+
         &-card-list {
             display: grid;
             grid-template-columns: repeat(3, 384px);

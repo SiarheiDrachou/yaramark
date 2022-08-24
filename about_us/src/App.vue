@@ -53,6 +53,8 @@
         width: 100%;
         height: 100%;
         min-width: 360px;
+        max-width: 100%;
+        overflow-x: hidden;
     }
 
     p,
