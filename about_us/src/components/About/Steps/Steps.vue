@@ -7,17 +7,13 @@
                 <h3 class="steps-list__item__heading">Профессиональное оборудование</h3>
 
                 <p class="steps-list__item__text">
-                    В работе используем
-                    <br />
-                    собственные механизмы
-                    <br />
-                    ведущих произодителей
+                    В организации имеются парк собственной дорожно-строительной техники ведущих производителей
                     <span>
                         (Komatsu, Caterpillar, Case, Hitachi,
                         <br />
                         Bomag, SDLG, HYUNDAI, МАЗ, КАМАЗ,
                         <br />
-                        AMKADOR, BOBCAT комплекс малой механизаций)
+                        AMKODOR, BOBCAT комплекс малой механизаций).
                     </span>
                 </p>
             </div>
@@ -26,11 +22,11 @@
             <Number2 />
 
             <div>
-                <h3 class="steps-list__item__heading">Опытные мастера</h3>
+                <h3 class="steps-list__item__heading">Опытные инженера</h3>
 
                 <p class="steps-list__item__text">
                     Аттестованные специалисты с
-                    опытом работы от 5 лет
+                    опытом работы от 5 лет.
                 </p>
             </div>
         </li>
@@ -41,9 +37,8 @@
                 <h3 class="steps-list__item__heading">О компании в цифрах</h3>
 
                 <p class="steps-list__item__text">
-                    3 года на рынке
-                    Более 45 выполненных объектов
-                    56 сертификатов
+                    3 года на рынке.
+                    Более 50 выполненных объектов и довольных клиентов.
                 </p>
             </div>
         </li>

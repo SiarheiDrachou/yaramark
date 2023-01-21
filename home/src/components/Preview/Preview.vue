@@ -32,7 +32,7 @@
 <style lang="scss">
     .preview {
         background-image: url("https://yaramark.by/img/preview-bg.png");
-        background-size: cover;
+        background-size: 100% 100%;
         background-position: center;
         background-repeat: no-repeat;
         padding: 132px 0 176px;
@@ -87,7 +87,7 @@
             @media(max-width: 640px) {
                 font-size: 16px;
                 line-height: 24px;
-                margin: 40px 0 338px;
+                margin: 40px 0 150px;
             }
 
             span {

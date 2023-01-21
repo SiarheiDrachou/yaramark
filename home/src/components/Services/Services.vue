@@ -123,6 +123,7 @@
 
     &__heading {
         margin-bottom: 70px;
+        text-align: center;
     }
 
     &-list {

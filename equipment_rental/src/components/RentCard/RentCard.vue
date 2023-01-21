@@ -65,14 +65,13 @@
 
 <style lang="scss">
     .rent-card-list__item {
-        padding: 15px 20px;
         box-shadow: 0px 0px 23px rgba(0, 0, 0, 0.25);
+        width: 341px;
 
         figure {
             
             img {
                 max-width: 100%;
-                width: 341px;
                 height: 211px;
             }
 
@@ -80,6 +79,7 @@
                 font-weight: 500;
                 font-size: 17px;
                 line-height: 28px;
+                padding: 0 20px;
 
                 @media(max-width: 968px) {
                     height: 56px;
@@ -89,6 +89,7 @@
 
         .card-container {
             height: 181px;
+            padding: 0 20px;
         }
 
         .card-type {
@@ -108,9 +109,10 @@
         }
 
         button {
-            width: 100%;
-            margin-top: 15px;
+            display: block;
+            width: 88%;
             padding: 14px;
+            margin: 15px auto;
         }
     }
 </style>

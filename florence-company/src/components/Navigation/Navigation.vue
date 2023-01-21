@@ -15,7 +15,25 @@
                 <div class="header-navigation-submenu" :class="{'header-navigation-submenu--mobile': isSubMenu}">
                     <ul class="header-navigation-submenu-list">
                         <li class="header-navigation-submenu-list__item">
-                            Генподряд
+                            Укладка асфальта
+                        </li>
+                        <li class="header-navigation-submenu-list__item">
+                            Земляные работы
+                        </li>
+                        <li class="header-navigation-submenu-list__item">
+                            Инженерные сети
+                        </li>
+                        <li class="header-navigation-submenu-list__item">
+                            Ландшафтный дизайн
+                        </li>
+                        <li class="header-navigation-submenu-list__item">
+                            Малые архитектурные формы
+                        </li>
+                        <li class="header-navigation-submenu-list__item">
+                            Устройство детских игровых комплексов
+                        </li>
+                        <li class="header-navigation-submenu-list__item">
+                            Демонтажные работы
                         </li>
                         <li class="header-navigation-submenu-list__item">
                             Подрядчик по земляным работам
@@ -42,7 +60,7 @@
                 <a class="header-navigation__list-item__link" href="/objects">Объекты</a>
             </li>
             <li class="header-navigation__list-item">
-                <a class="header-navigation__list-item__link" href="/technical_competence">Техкомпетенция</a>
+                <a class="header-navigation__list-item__link" href="/technical_competence">Сертификаты</a>
             </li>
             <li class="header-navigation__list-item">
                 <a class="header-navigation__list-item__link" href="/about_us">О нас</a>
@@ -222,6 +240,8 @@
 
                 &--mobile {
                     display: grid;
+                    max-height: 250px;
+                    overflow-y: scroll;
                 }
 
                 &-list {

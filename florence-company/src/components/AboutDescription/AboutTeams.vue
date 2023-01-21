@@ -21,7 +21,7 @@
     }
 
     ol {
-        padding-left: 15px;
+        padding-left: 25px;
 
         li {
             font-size: 24px;

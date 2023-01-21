@@ -54,7 +54,7 @@
         img {
             width: 80vw;
             max-height: 95vh;
-            max-width: 900px;
+            max-width: 720px;
         }
     }
 </style>

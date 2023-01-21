@@ -7,17 +7,13 @@
                 <h3 class="steps-list__item__heading">Профессиональное оборудование</h3>
 
                 <p class="steps-list__item__text">
-                    В работе используем
-                    <br />
-                    собственные механизмы
-                    <br />
-                    ведущих произодителей
+                    В организации имеются парк собственной дорожно-строительной техники ведущих производителей
                     <span>
                         (Komatsu, Caterpillar, Case, Hitachi,
                         <br />
                         Bomag, SDLG, HYUNDAI, МАЗ, КАМАЗ,
                         <br />
-                        AMKADOR, BOBCAT комплекс малой механизаций)
+                        AMKODOR, BOBCAT комплекс малой механизаций).
                     </span>
                 </p>
             </div>
@@ -26,11 +22,11 @@
             <Number2 />
 
             <div>
-                <h3 class="steps-list__item__heading">Опытные мастера</h3>
+                <h3 class="steps-list__item__heading">Опытные инженера</h3>
 
                 <p class="steps-list__item__text">
                     Аттестованные специалисты с
-                    опытом работы от 5 лет
+                    опытом работы от 5 лет.
                 </p>
             </div>
         </li>
@@ -41,9 +37,8 @@
                 <h3 class="steps-list__item__heading">О компании в цифрах</h3>
 
                 <p class="steps-list__item__text">
-                    3 года на рынке
-                    Более 45 выполненных объектов
-                    56 сертификатов
+                    3 года на рынке.
+                    Более 50 выполненных объектов и довольных клиентов.
                 </p>
             </div>
         </li>
@@ -81,6 +76,10 @@
             margin: 0 auto 65px;
         }
 
+        @media(max-width: 640px) {
+            margin: 0 auto 30px;
+        }
+
         &__item {
 
             @media(max-width: 1340px) and (min-width: 968px) {
@@ -110,11 +109,6 @@
                 @media(max-width: 968px) {
                     margin-top: 42px;
                 }
-
-                @media(max-width: 768px) {
-                    font-size: 18px;
-                    line-height: 26px;
-                }
             }
 
             &__text {
@@ -124,8 +118,6 @@
                 
                 @media(max-width: 768px) {
                     max-width: 450px;
-                    font-size: 16px;
-                    line-height: 23px;
                 }
 
                 br {
@@ -139,11 +131,6 @@
                     display: block;
                     font-size: 18px;
                     line-height: 21px;
-
-                    @media(max-width: 768px) {
-                        font-size: 14px;
-                        line-height: 20px;
-                    }
                 }
             }
         }

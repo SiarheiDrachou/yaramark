@@ -3,7 +3,7 @@
         <fieldset :class="{'error': !isPhoneNumber && !isBlurPhoneNumber}">
             <legend>Номер телефона</legend>
 
-            <vue-tel-input v-model="phone" @input="maskCheck" ref="inputPhones"></vue-tel-input>
+            <vue-tel-input v-model="phone" @validate="maskCheck" ref="inputPhones"></vue-tel-input>
         </fieldset>
 
         <p class="error-message" v-show="!isPhoneNumber && !isBlurPhoneNumber">Некорректный мобильный номер!</p>
@@ -104,7 +104,7 @@
         watch: {
             isSuccess: function(isSuccess) {
                 if(isSuccess === 'success') {
-                    this.phone = null;
+                    this.phone = '';
                     this.name = null;
                     this.comment = '';
                     this.timeStart = "8:00";
@@ -114,18 +114,16 @@
             }
         },
         methods: {
-            maskCheck: function () {
-                const { _watchers: watchers } = this.$refs.inputPhones;
-
-                if(watchers[4]?.value?.countryCode && !watchers[4]?.value?.valid) {
+            maskCheck: function (event) {
+                if(event?.countryCode && !event?.valid) {
                     this.isPhoneNumber = false;
                     this.isBlurPhoneNumber = false;
                 }
 
-                if(watchers[4]?.value?.valid) {
+                if(event?.valid) {
                     this.isPhoneNumber = true;
                     this.isBlurPhoneNumber = true;
-                    this.phone = watchers[4]?.value?.number || null;
+                    this.phone = event?.number || null;
                 } else {
                     this.isPhoneNumber = false;
                 }

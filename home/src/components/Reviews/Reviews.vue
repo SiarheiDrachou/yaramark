@@ -82,6 +82,7 @@
 
         &__heading {
             margin-bottom: 70px;
+            text-align: center;
 
             @media(max-width: 640px) {
                 margin-bottom: 40px;

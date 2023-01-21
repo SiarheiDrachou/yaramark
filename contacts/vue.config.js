@@ -1,6 +1,6 @@
 module.exports = {
-    publicPath: '/contacts',
-    // publicPath: '.',
+    // publicPath: '/contacts',
+    publicPath: '.',
     productionSourceMap: false,
     chainWebpack: config => {
         config.plugin('html').tap(options => {

@@ -2,7 +2,7 @@
     <section class="technical-competence">
         <div class="technical-competence-container">
             <h3 class="technical-competence-container__heading" :class="{'technical-competence-container__heading--active': isCertificates}" @click="isCertificates = !isCertificates">
-                Сертификаты
+                Cертификаты соответствия на выполнение работ
                 <SubmenuIcon />
             </h3>
 
@@ -23,7 +23,7 @@
 
         <div class="technical-competence-container">
             <h3 class="technical-competence-container__heading" :class="{'technical-competence-container__heading--active': isAttestates}" @click="isAttestates = !isAttestates">
-                Аттестаты
+                Аттестаты соответствия
                 <SubmenuIcon />
             </h3>
 
@@ -44,7 +44,7 @@
 
         <div class="technical-competence-container">
             <h3 class="technical-competence-container__heading" :class="{'technical-competence-container__heading--active': isEvidences}" @click="isEvidences = !isEvidences">
-                Свидетельства
+                Свидетельства о технической компетентности
                 <SubmenuIcon />
             </h3>
 
@@ -65,7 +65,7 @@
 
         <div class="technical-competence-container">
             <h3 class="technical-competence-container__heading" :class="{'technical-competence-container__heading--active': isReviews}" @click="isReviews = !isReviews">
-                Отзывы
+                Отзывы о выполненных работах
                 <SubmenuIcon />
             </h3>
 
@@ -98,43 +98,8 @@
             return {
                 certificates: [
                     {
-                        src: 'https://yaramark.by/img/certificates.jpg',
-                        WEBPsrc: 'https://yaramark.by/img/certificates.webp',
-                        alt: `Сертификат соответствия `
-                    },
-                    {
-                        src: 'https://yaramark.by/img/certificates1.jpg',
-                        WEBPsrc: 'https://yaramark.by/img/certificates1.webp',
-                        alt: `Сертификат соответствия `
-                    },
-                    {
-                        src: 'https://yaramark.by/img/certificates2.jpg',
-                        WEBPsrc: 'https://yaramark.by/img/certificates2.webp',
-                        alt: `Сертификат соответствия `
-                    },
-                    {
-                        src: 'https://yaramark.by/img/certificates3.jpg',
-                        WEBPsrc: 'https://yaramark.by/img/certificates3.webp',
-                        alt: `Сертификат соответствия `
-                    },
-                    {
-                        src: 'https://yaramark.by/img/certificates4.jpg',
-                        WEBPsrc: 'https://yaramark.by/img/certificates4.webp',
-                        alt: `Сертификат соответствия `
-                    },
-                    {
-                        src: 'https://yaramark.by/img/certificates5.jpg',
-                        WEBPsrc: 'https://yaramark.by/img/certificates5.webp',
-                        alt: `Сертификат соответствия `
-                    },
-                    {
-                        src: 'https://yaramark.by/img/certificates6.jpg',
-                        WEBPsrc: 'https://yaramark.by/img/certificates6.webp',
-                        alt: `Сертификат соответствия `
-                    },
-                    {
-                        src: 'https://yaramark.by/img/certificates7.jpg',
-                        WEBPsrc: 'https://yaramark.by/img/certificates7.webp',
+                        src: 'https://yaramark.by/img/certificates9.jpg',
+                        WEBPsrc: 'https://yaramark.by/img/certificates9.webp',
                         alt: `Сертификат соответствия `
                     },
                     {
@@ -143,13 +108,33 @@
                         alt: `Сертификат соответствия `
                     },
                     {
-                        src: 'https://yaramark.by/img/certificates9.jpg',
-                        WEBPsrc: 'https://yaramark.by/img/certificates9.webp',
+                        src: 'https://yaramark.by/img/certificates6.jpg',
+                        WEBPsrc: 'https://yaramark.by/img/certificates6.webp',
                         alt: `Сертификат соответствия `
                     },
                     {
-                        src: 'https://yaramark.by/img/certificates10.jpg',
-                        WEBPsrc: 'https://yaramark.by/img/certificates10.webp',
+                        src: 'https://yaramark.by/img/certificates5.jpg',
+                        WEBPsrc: 'https://yaramark.by/img/certificates5.webp',
+                        alt: `Сертификат соответствия `
+                    },
+                    {
+                        src: 'https://yaramark.by/img/certificates4.jpg',
+                        WEBPsrc: 'https://yaramark.by/img/certificates4.webp',
+                        alt: `Сертификат соответствия `
+                    },
+                    {
+                        src: 'https://yaramark.by/img/certificates3.jpg',
+                        WEBPsrc: 'https://yaramark.by/img/certificates3.webp',
+                        alt: `Сертификат соответствия `
+                    },
+                    {
+                        src: 'https://yaramark.by/img/certificates12.jpg',
+                        WEBPsrc: 'https://yaramark.by/img/certificates12.webp',
+                        alt: `Сертификат соответствия `
+                    },
+                    {
+                        src: 'https://yaramark.by/img/certificates2.jpg',
+                        WEBPsrc: 'https://yaramark.by/img/certificates2.webp',
                         alt: `Сертификат соответствия `
                     },
                     {
@@ -158,8 +143,18 @@
                         alt: `Сертификат соответствия `
                     },
                     {
-                        src: 'https://yaramark.by/img/certificates12.jpg',
-                        WEBPsrc: 'https://yaramark.by/img/certificates12.webp',
+                        src: 'https://yaramark.by/img/certificates1.jpg',
+                        WEBPsrc: 'https://yaramark.by/img/certificates1.webp',
+                        alt: `Сертификат соответствия `
+                    },
+                    {
+                        src: 'https://yaramark.by/img/certificates.jpg',
+                        WEBPsrc: 'https://yaramark.by/img/certificates.webp',
+                        alt: `Сертификат соответствия `
+                    },
+                    {
+                        src: 'https://yaramark.by/img/certificates10.jpg',
+                        WEBPsrc: 'https://yaramark.by/img/certificates10.webp',
                         alt: `Сертификат соответствия `
                     },
                     {
@@ -180,15 +175,15 @@
                         alt: `Сертификат соответствия`
                     },
                     {
+                        src: 'https://yaramark.by/img/attestate-of-conformity2.jpg',
+                        WEBPsrc: 'https://yaramark.by/img/attestate-of-conformity2.webp',
+                        alt: `Сертификат соответствия`
+                    },
+                    {
                         src: 'https://yaramark.by/img/attestate-of-conformity1.jpg',
                         WEBPsrc: 'https://yaramark.by/img/attestate-of-conformity1.webp',
                         alt: `Сертификат соответствия`
                     },
-                    {
-                        src: 'https://yaramark.by/img/attestate-of-conformity2.jpg',
-                        WEBPsrc: 'https://yaramark.by/img/attestate-of-conformity2.webp',
-                        alt: `Сертификат соответствия`
-                    },  
                 ],
                 evidences: [
                     {

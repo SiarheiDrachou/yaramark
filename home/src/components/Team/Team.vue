@@ -5,12 +5,14 @@
         </h2>
 
         <ul class="team-list">
-            <li class="team-list__item team-list__item" v-for="team in teams" :key="team.name">
+            <li class="team-list__item" v-for="team in teams" :key="team.name">
                 <Person :person="team.person" />
                 <p class="team-list__item__heading" v-text="team.name"></p>
 
                 <a v-if="team.tel" class="team-list__item__link" :href="'tel:' + team.tel" v-text="team.tel"></a>
                 
+                <Messagers :messagers="team.messagers" />
+
                 <p class="team-list__item__text" v-text="team.position"></p>
             </li>
         </ul>
@@ -18,35 +20,79 @@
 </template>
 
 <script>
+    import Messagers from "../Messagers/Messagers.vue";
     import Person from "../../assets/svg/Person.vue";
 
     export default {
         components: {
             Person,
+            Messagers,
         },
         data() {
             return {
                 teams: [
                     {
                         id: 1,
-                        position: `Начальник отдела ПТО`,
+                        position: `Управляющий`,
                         name: `Некрасов Александр Владимирович`,
-                        tel: `+375(29)138-40-70`,
+                        tel: `+375(29)681-06-76`,
                         person: "male",
+                        messagers: [
+                            {
+                                type: 'tg',
+                                number: '375296810676'
+                            },
+                            {
+                                type: 'viber',
+                                number: '375296810676'
+                            },
+                            {
+                                type: 'whatsapp',
+                                number: '375296810676'
+                            }
+                        ],
                     },
                     {
                         id: 2,
                         position: `Главный инженер`,
-                        name: `Данилевич Олег Олегович`,
-                        tel: `+375(44)572-54-97`,
+                        name: `Иванов Алексей Валерьевич`,
+                        tel: `+375(44)746-16-37`,
                         person: "male",
+                        messagers: [
+                            {
+                                type: 'tg',
+                                number: '375447461637'
+                            },
+                            {
+                                type: 'viber',
+                                number: '375447461637'
+                            },
+                            {
+                                type: 'whatsapp',
+                                number: '375447461637'
+                            }
+                        ],
                     },
                     {
                         id: 3,
                         position: `Заместитель главного инженера`,
-                        name: `Иванов Алексей Валерьевич`,
-                        tel: `+375(44)746-16-37`,
+                        name: `Данилевич Олег Олегович`,
+                        tel: `+375(44)572-54-97`,
                         person: "male",
+                        messagers: [
+                            {
+                                type: 'tg',
+                                number: '375445725497'
+                            },
+                            {
+                                type: 'viber',
+                                number: '375445725497'
+                            },
+                            {
+                                type: 'whatsapp',
+                                number: '375445725497'
+                            }
+                        ],
                     },
                     {
                         id: 4,
@@ -54,6 +100,20 @@
                         name: `Лешкевич Алексей Андреевич`,
                         tel: `+375(29)688-86-19`,
                         person: "male",
+                        messagers: [
+                            {
+                                type: 'tg',
+                                number: '375296888619'
+                            },
+                            {
+                                type: 'viber',
+                                number: '375296888619'
+                            },
+                            {
+                                type: 'whatsapp',
+                                number: '375296888619'
+                            }
+                        ],
                     },
                     {
                         id: 5,
@@ -61,6 +121,16 @@
                         name: `Малова Елена Валерьевна`,
                         tel: `+375(29)844-79-81`,
                         person: "female",
+                        messagers: [
+                            {
+                                type: 'tg',
+                                number: '375298447981'
+                            },
+                            {
+                                type: 'viber',
+                                number: '375298447981'
+                            },
+                        ],
                     },
                     {
                         id: 6,
@@ -68,6 +138,16 @@
                         name: `Челядинская Екатерина Александровна`,
                         tel: `+375(29)101-56-04`,
                         person: "female",
+                        messagers: [
+                            {
+                                type: 'tg',
+                                number: '375291015604'
+                            },
+                            {
+                                type: 'viber',
+                                number: '375291015604'
+                            },
+                        ],
                     },
                     {
                         id: 6,
@@ -75,13 +155,33 @@
                         name: `Малков Александр Михайлович`,
                         tel: `+375(29)174-98-24`,
                         person: "male",
+                        messagers: [
+                            {
+                                type: 'tg',
+                                number: '375291749824'
+                            },
+                            {
+                                type: 'viber',
+                                number: '375291749824'
+                            },
+                        ],
                     },
                     {
                         id: 7,
-                        position: `Производитель работ`,
-                        name: `Буйневич Сергей Иванович`,
-                        tel: null,
+                        position: `Экономист, инженер ПТО, специалист по договорам аренды`,
+                        name: `Даревская Елизавета Владимировна`,
+                        tel: '+375(33)334-40-82',
                         person: "male",
+                        messagers: [
+                            {
+                                type: 'tg',
+                                number: '375333344082'
+                            },
+                            {
+                                type: 'viber',
+                                number: '375333344082'
+                            },
+                        ],
                     },
                     {
                         id: 8,
@@ -89,6 +189,16 @@
                         name: `Грицкевич Андрей Петрович`,
                         tel: null,
                         person: "male",
+                        messagers: [
+                            {
+                                type: 'tg',
+                                number: ''
+                            },
+                            {
+                                type: 'viber',
+                                number: ''
+                            },
+                        ],
                     },
                 ],
             };
@@ -107,6 +217,7 @@
 
         &__heading {
             margin-bottom: 70px;
+            text-align: center;
         }
 
         &-list {
@@ -125,6 +236,9 @@
             &__item {
                 padding: 15px 0 70px;
                 text-align: center;
+                display: grid;
+                grid-auto-flow: column;
+                grid-gap: 15px;
 
                 &__text {
                     font-size: 18px;
@@ -144,6 +258,14 @@
                     font-size: 20px;
                     line-height: 24px;
                     color: black;
+                }
+
+                &-messagers {
+
+                    svg {
+                        width: 50px;
+                        height: 50px;
+                    }
                 }
             }
         }

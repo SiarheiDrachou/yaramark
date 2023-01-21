@@ -51,7 +51,7 @@
         data() {
             return {
                 svisloch: {
-                    location: 'Республиканский центр обработки данных',
+                    location: 'г. Свислоч',
                     year: '13.07.2020 г.',
                     sqrt: '5100 м<sup>2</sup>',
                     images: [

@@ -61,6 +61,7 @@
 
         &__heading {
             margin-bottom: 60px;
+            text-align: center;
 
             @media(min-width: 640px) {
                 margin-bottom: 40px;

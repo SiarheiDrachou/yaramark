@@ -61,6 +61,7 @@
 
         &__heading {
             margin-bottom: 60px;
+            text-align: center;
         }
 
         &-container {

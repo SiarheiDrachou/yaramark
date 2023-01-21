@@ -1,6 +1,6 @@
 module.exports = {
-    // publicPath: '/objects/florence-company',
-    publicPath: '.',
+    publicPath: '/objects/florence-company',
+    // publicPath: '.',
     productionSourceMap: false,
     chainWebpack: config => {
         config.plugin('html').tap(options => {
