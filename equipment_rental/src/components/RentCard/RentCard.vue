@@ -80,15 +80,12 @@
                 font-size: 17px;
                 line-height: 28px;
                 padding: 0 20px;
-
-                @media(max-width: 968px) {
-                    height: 56px;
-                }
+                height: 56px;
             }
         }
 
         .card-container {
-            height: 181px;
+            height: 200px;
             padding: 0 20px;
         }
 

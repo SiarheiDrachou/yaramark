@@ -41,7 +41,7 @@
                         messagers: [
                             {
                                 type: 'tg',
-                                number: ''
+                                number: '@alex_nekrasov_1988'
                             },
                             {
                                 type: 'viber',
@@ -62,7 +62,7 @@
                         messagers: [
                             {
                                 type: 'tg',
-                                number: ''
+                                number: '@Benjamin_Franklin_usa'
                             },
                             {
                                 type: 'viber',
@@ -83,7 +83,7 @@
                         messagers: [
                             {
                                 type: 'tg',
-                                number: ''
+                                number: '@olegdanila'
                             },
                             {
                                 type: 'viber',
@@ -104,7 +104,7 @@
                         messagers: [
                             {
                                 type: 'tg',
-                                number: ''
+                                number: '@leshkevich_alexei'
                             },
                             {
                                 type: 'viber',
@@ -142,7 +142,7 @@
                         messagers: [
                             {
                                 type: 'tg',
-                                number: ''
+                                number: '@cherkas1305'
                             },
                             {
                                 type: 'viber',
@@ -176,7 +176,7 @@
                         messagers: [
                             {
                                 type: 'tg',
-                                number: ''
+                                number: '@nek_eli'
                             },
                             {
                                 type: 'viber',

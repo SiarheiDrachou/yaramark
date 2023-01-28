@@ -85,7 +85,7 @@
         }
 
         .card-container {
-            height: 181px;
+            height: 200px;
         }
 
         .card-type {
