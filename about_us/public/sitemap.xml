@@ -30,16 +30,11 @@
 <url>
   <loc>https://yaramark.by/about_us/</loc>
   <lastmod>2022-08-02T13:22:38+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>1</priority>
 </url>
 <url>
   <loc>https://yaramark.by/contacts/</loc>
   <lastmod>2022-08-03T11:13:15+00:00</lastmod>
   <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://yaramark.by/objects/azs-64</loc>
-  <lastmod>2022-08-03T11:13:15+00:00</lastmod>
-  <priority>1</priority>
 </url>
 </urlset>

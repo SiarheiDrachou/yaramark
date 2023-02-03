@@ -9,8 +9,13 @@
 
 <url>
   <loc>https://yaramark.by/</loc>
-  <lastmod>2022-08-02T18:25:42+00:00</lastmod>
-  <priority>1.00</priority>
+  <lastmod>2023-02-03T18:25:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://yaramark.by/objects/industrial-park-property-management-company</loc>
+  <lastmod>2022-08-02T18:39:21+00:00</lastmod>
+  <priority>1</priority>
 </url>
 <url>
   <loc>https://yaramark.by/equipment_rental/</loc>
@@ -37,61 +42,4 @@
   <lastmod>2022-08-03T11:13:15+00:00</lastmod>
   <priority>0.80</priority>
 </url>
-<url>
-  <loc>https://yaramark.by/objects/socio-pedagogical-center/</loc>
-  <lastmod>2022-08-02T17:12:50+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://yaramark.by/objects/minsk-united-sports-club/</loc>
-  <lastmod>2022-08-02T17:30:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://yaramark.by/objects/industrial-park-property-management-company/</loc>
-  <lastmod>2022-08-02T17:39:10+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://yaramark.by/objects/stroytrest-1/</loc>
-  <lastmod>2022-08-02T16:59:11+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://yaramark.by/objects/sanvest/</loc>
-  <lastmod>2022-08-02T17:19:54+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://yaramark.by/objects/azs-64/</loc>
-  <lastmod>2022-08-02T17:53:33+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://yaramark.by/objects/florence-company/</loc>
-  <lastmod>2022-08-02T17:43:18+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://yaramark.by/objects/stroytekhnorm/</loc>
-  <lastmod>2022-08-02T16:47:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://yaramark.by/objects/azs-46/</loc>
-  <lastmod>2022-08-02T17:58:21+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://yaramark.by/objects/azs-80/</loc>
-  <lastmod>2022-08-02T17:49:06+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://yaramark.by/objects/parish-of-the-church-of-the-intercession-of-the-most-holy-theotokos/</loc>
-  <lastmod>2022-08-02T17:26:52+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-
-
 </urlset>

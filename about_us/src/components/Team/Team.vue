@@ -120,7 +120,7 @@
                         id: 5,
                         position: `Начальник отдела ПТО`,
                         name: `Малова Елена Валерьевна`,
-                        tel: `+375(29)844-79-81`,
+                        tel: `+375(44)719-76-11`,
                         person: "female",
                         messagers: [
                             {
@@ -188,12 +188,12 @@
                         id: 8,
                         position: `Производитель работ`,
                         name: `Грицкевич Андрей Петрович`,
-                        tel: null,
+                        tel: `+375(29)251-83-45`,
                         person: "male",
                         messagers: [
                             {
                                 type: 'tg',
-                                number: ''
+                                number: '@Hrytskevich_A'
                             },
                             {
                                 type: 'viber',

@@ -5,11 +5,12 @@
         </h2>
 
         <ul class="team-list">
-            <li class="team-list__item" v-for="team in teams" :key="team.name">
+            <li class="team-list__item team-list__item" v-for="team in teams" :key="team.name">
                 <Person :person="team.person" />
                 <p class="team-list__item__heading" v-text="team.name"></p>
 
-                <a v-if="team.tel" class="team-list__item__link" :href="'tel:' + team.tel" v-text="team.tel"></a>
+                <p v-if="!team.tel" class="team-list__item__link"></p>
+                <a v-else class="team-list__item__link" :href="'tel:' + team.tel" v-text="team.tel"></a>
                 
                 <Messagers :messagers="team.messagers" />
 
@@ -40,7 +41,7 @@
                         messagers: [
                             {
                                 type: 'tg',
-                                number: '375296810676'
+                                number: '@alex_nekrasov_1988'
                             },
                             {
                                 type: 'viber',
@@ -61,7 +62,7 @@
                         messagers: [
                             {
                                 type: 'tg',
-                                number: '375447461637'
+                                number: '@Benjamin_Franklin_usa'
                             },
                             {
                                 type: 'viber',
@@ -82,7 +83,7 @@
                         messagers: [
                             {
                                 type: 'tg',
-                                number: '375445725497'
+                                number: '@olegdanila'
                             },
                             {
                                 type: 'viber',
@@ -103,7 +104,7 @@
                         messagers: [
                             {
                                 type: 'tg',
-                                number: '375296888619'
+                                number: '@leshkevich_alexei'
                             },
                             {
                                 type: 'viber',
@@ -119,12 +120,12 @@
                         id: 5,
                         position: `Начальник отдела ПТО`,
                         name: `Малова Елена Валерьевна`,
-                        tel: `+375(29)844-79-81`,
+                        tel: `+375(44)719-76-11`,
                         person: "female",
                         messagers: [
                             {
                                 type: 'tg',
-                                number: '375298447981'
+                                number: '@AlenaPTO'
                             },
                             {
                                 type: 'viber',
@@ -141,7 +142,7 @@
                         messagers: [
                             {
                                 type: 'tg',
-                                number: '375291015604'
+                                number: '@cherkas1305'
                             },
                             {
                                 type: 'viber',
@@ -158,7 +159,7 @@
                         messagers: [
                             {
                                 type: 'tg',
-                                number: '375291749824'
+                                number: ''
                             },
                             {
                                 type: 'viber',
@@ -175,7 +176,7 @@
                         messagers: [
                             {
                                 type: 'tg',
-                                number: '375333344082'
+                                number: '@nek_eli'
                             },
                             {
                                 type: 'viber',
@@ -187,12 +188,12 @@
                         id: 8,
                         position: `Производитель работ`,
                         name: `Грицкевич Андрей Петрович`,
-                        tel: null,
+                        tel: `+375(29)251-83-45`,
                         person: "male",
                         messagers: [
                             {
                                 type: 'tg',
-                                number: ''
+                                number: '@Hrytskevich_A'
                             },
                             {
                                 type: 'viber',
@@ -235,37 +236,46 @@
 
             &__item {
                 padding: 15px 0 70px;
-                text-align: center;
                 display: grid;
-                grid-auto-flow: column;
+                grid-auto-flow: row;
                 grid-gap: 15px;
+                grid-template-rows: auto 1fr repeat(2, auto) 1fr;
 
                 &__text {
                     font-size: 18px;
                     line-height: 24px;
-                    max-width: 200px;
-                    margin: 15px auto 0;
+                    justify-self: center;
+                    text-align: center;
                 }
 
                 &__heading {
-                    margin: 20px 0;
                     font-size: 20px;
                     line-height: 24px;
                     font-weight: 500;
+                    justify-self: center;
+                    text-align: center;
                 }
 
                 &__link {
                     font-size: 20px;
                     line-height: 24px;
                     color: black;
+                    justify-self: center;
+                    min-height: 24px;
                 }
 
                 &-messagers {
-
+                    justify-self: center;
+                    min-height: 50px;
+                    
                     svg {
                         width: 50px;
                         height: 50px;
                     }
+                }
+
+                svg {
+                    justify-self: center;
                 }
             }
         }
