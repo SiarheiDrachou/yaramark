@@ -27,7 +27,7 @@
 
                 Перейти в Viber
             </a>
-            <a href="https://telegram.im/375296888619" class="request-modal-container__button telegramm">
+            <a href="https://telegram.im/@leshkevich_alexei" class="request-modal-container__button telegramm">
                 <TelegramLogo />
 
                 Перейти в Телеграм

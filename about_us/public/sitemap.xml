@@ -8,33 +8,95 @@
 
 
 <url>
+  <loc>https://yaramark.by/about_us/</loc>
+  <lastmod>2023-02-03T17:15:13+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
   <loc>https://yaramark.by/</loc>
-  <lastmod>2023-02-03T18:25:42+00:00</lastmod>
+  <lastmod>2023-02-03T17:15:55+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://yaramark.by/equipment_rental/</loc>
-  <lastmod>2022-08-03T06:30:49+00:00</lastmod>
+  <lastmod>2023-02-03T17:19:56+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://yaramark.by/objects/</loc>
-  <lastmod>2022-08-02T18:39:21+00:00</lastmod>
+  <lastmod>2023-02-03T17:20:23+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://yaramark.by/technical_competence/</loc>
-  <lastmod>2022-08-03T06:06:45+00:00</lastmod>
+  <lastmod>2023-02-03T17:20:35+00:00</lastmod>
   <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://yaramark.by/about_us/</loc>
-  <lastmod>2022-08-02T13:22:38+00:00</lastmod>
-  <priority>1</priority>
 </url>
 <url>
   <loc>https://yaramark.by/contacts/</loc>
-  <lastmod>2022-08-03T11:13:15+00:00</lastmod>
+  <lastmod>2023-02-03T17:19:36+00:00</lastmod>
   <priority>0.80</priority>
 </url>
+<url>
+  <loc>https://yaramark.by/objects/socio-pedagogical-center/</loc>
+  <lastmod>2023-02-03T17:39:20+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yaramark.by/objects/minsk-united-sports-club/</loc>
+  <lastmod>2023-02-03T17:38:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yaramark.by/objects/industrial-park-property-management-company/</loc>
+  <lastmod>2023-02-03T17:38:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yaramark.by/objects/stroytrest-1/</loc>
+  <lastmod>2023-02-03T17:39:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yaramark.by/objects/sanvest/</loc>
+  <lastmod>2023-02-03T17:39:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yaramark.by/objects/azs-64/</loc>
+  <lastmod>2023-02-03T17:36:45+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yaramark.by/objects/florence-company/</loc>
+  <lastmod>2023-02-03T17:37:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yaramark.by/objects/stroytekhnorm/</loc>
+  <lastmod>2023-02-03T17:39:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yaramark.by/objects/azs-46/</loc>
+  <lastmod>2023-02-03T17:35:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yaramark.by/objects/azs-80/</loc>
+  <lastmod>2023-02-03T17:36:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yaramark.by/objects/parish-of-the-church-of-the-intercession-of-the-most-holy-theotokos/</loc>
+  <lastmod>2023-02-03T17:38:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yaramark.by/objects/great-stone/</loc>
+  <lastmod>2023-02-03T17:37:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
 </urlset>
