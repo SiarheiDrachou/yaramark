@@ -1,3 +1,0 @@
-User-agent: *
-Sitemap: https://yaramark.by/technical_competence/sitemap.xml
-Host: yaramark.by

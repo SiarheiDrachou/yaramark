@@ -1,3 +1,0 @@
-User-agent: *
-Sitemap: https://yaramark.by/contacts/sitemap.xml
-Host: yaramark.by

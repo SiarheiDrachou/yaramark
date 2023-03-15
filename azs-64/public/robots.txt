@@ -1,3 +1,0 @@
-User-agent: *
-Sitemap: https://yaramark.by/objects/azs-64/sitemap.xml
-Host: yaramark.by
